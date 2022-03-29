@@ -1,5 +1,5 @@
 /******************************************************************************
-* (c) Copyright 2010-2014 Xilinx, Inc. All rights reserved.
+* (c) Copyright 2010-2018 Xilinx, Inc. All rights reserved.
 *
 *  This program is free software; you can redistribute it and/or modify
 *  it under the terms of the GNU General Public License as published by
@@ -3845,44 +3845,6 @@ unsigned long ps7_peripherals_init_data_3_0[] = {
     // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
     // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
     // .. .. .. FINISH: ENET0 RESET
-    // .. .. .. START: ENET1 RESET
-    // .. .. .. .. START: DIR MODE BANK 0
-    // .. .. .. .. FINISH: DIR MODE BANK 0
-    // .. .. .. .. START: DIR MODE BANK 1
-    // .. .. .. .. FINISH: DIR MODE BANK 1
-    // .. .. .. .. START: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. START: OUTPUT ENABLE BANK 0
-    // .. .. .. .. FINISH: OUTPUT ENABLE BANK 0
-    // .. .. .. .. START: OUTPUT ENABLE BANK 1
-    // .. .. .. .. FINISH: OUTPUT ENABLE BANK 1
-    // .. .. .. .. START: MASK_DATA_0_LSW LOW BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW LOW BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW LOW BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW LOW BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW LOW BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW LOW BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW LOW BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW LOW BANK [53:48]
-    // .. .. .. .. START: ADD 1 MS DELAY
-    // .. .. .. .. 
-    EMIT_MASKDELAY(0XF8F00200, 1),
-    // .. .. .. .. FINISH: ADD 1 MS DELAY
-    // .. .. .. .. START: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. FINISH: ENET1 RESET
     // .. .. FINISH: ENET RESET
     // .. .. START: I2C RESET
     // .. .. FINISH: I2C RESET
@@ -8031,44 +7993,6 @@ unsigned long ps7_peripherals_init_data_2_0[] = {
     // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
     // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
     // .. .. .. FINISH: ENET0 RESET
-    // .. .. .. START: ENET1 RESET
-    // .. .. .. .. START: DIR MODE BANK 0
-    // .. .. .. .. FINISH: DIR MODE BANK 0
-    // .. .. .. .. START: DIR MODE BANK 1
-    // .. .. .. .. FINISH: DIR MODE BANK 1
-    // .. .. .. .. START: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. START: OUTPUT ENABLE BANK 0
-    // .. .. .. .. FINISH: OUTPUT ENABLE BANK 0
-    // .. .. .. .. START: OUTPUT ENABLE BANK 1
-    // .. .. .. .. FINISH: OUTPUT ENABLE BANK 1
-    // .. .. .. .. START: MASK_DATA_0_LSW LOW BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW LOW BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW LOW BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW LOW BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW LOW BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW LOW BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW LOW BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW LOW BANK [53:48]
-    // .. .. .. .. START: ADD 1 MS DELAY
-    // .. .. .. .. 
-    EMIT_MASKDELAY(0XF8F00200, 1),
-    // .. .. .. .. FINISH: ADD 1 MS DELAY
-    // .. .. .. .. START: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. FINISH: ENET1 RESET
     // .. .. FINISH: ENET RESET
     // .. .. START: I2C RESET
     // .. .. FINISH: I2C RESET
@@ -12142,44 +12066,6 @@ unsigned long ps7_peripherals_init_data_1_0[] = {
     // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
     // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
     // .. .. .. FINISH: ENET0 RESET
-    // .. .. .. START: ENET1 RESET
-    // .. .. .. .. START: DIR MODE BANK 0
-    // .. .. .. .. FINISH: DIR MODE BANK 0
-    // .. .. .. .. START: DIR MODE BANK 1
-    // .. .. .. .. FINISH: DIR MODE BANK 1
-    // .. .. .. .. START: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. START: OUTPUT ENABLE BANK 0
-    // .. .. .. .. FINISH: OUTPUT ENABLE BANK 0
-    // .. .. .. .. START: OUTPUT ENABLE BANK 1
-    // .. .. .. .. FINISH: OUTPUT ENABLE BANK 1
-    // .. .. .. .. START: MASK_DATA_0_LSW LOW BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW LOW BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW LOW BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW LOW BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW LOW BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW LOW BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW LOW BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW LOW BANK [53:48]
-    // .. .. .. .. START: ADD 1 MS DELAY
-    // .. .. .. .. 
-    EMIT_MASKDELAY(0XF8F00200, 1),
-    // .. .. .. .. FINISH: ADD 1 MS DELAY
-    // .. .. .. .. START: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. FINISH: MASK_DATA_0_LSW HIGH BANK [15:0]
-    // .. .. .. .. START: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. FINISH: MASK_DATA_0_MSW HIGH BANK [31:16]
-    // .. .. .. .. START: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. FINISH: MASK_DATA_1_LSW HIGH BANK [47:32]
-    // .. .. .. .. START: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. .. FINISH: MASK_DATA_1_MSW HIGH BANK [53:48]
-    // .. .. .. FINISH: ENET1 RESET
     // .. .. FINISH: ENET RESET
     // .. .. START: I2C RESET
     // .. .. FINISH: I2C RESET
@@ -12462,17 +12348,19 @@ ps7_config(unsigned long * ps7_config_init)
             }
             break;
         case OPCODE_MASKDELAY:
-            addr = (unsigned long*) args[0];
-            mask = args[1];
-            int delay = get_number_of_cycles_for_delay(mask);
-            perf_reset_and_start_timer(); 
-            while ((*addr < delay)) {
-            }
-            break;
-        default:
-            finish = PS7_INIT_CORRUPT;
-            break;
-        }
+	    {
+		    addr = (unsigned long*) args[0];
+		    mask = args[1];
+		    int delay = get_number_of_cycles_for_delay(mask);
+		    perf_reset_and_start_timer(); 
+		    while ((*addr < delay)) {
+		    }
+	    }
+	    break;
+	default:
+	    finish = PS7_INIT_CORRUPT;
+	    break;
+	}
     }
     return finish;
 }

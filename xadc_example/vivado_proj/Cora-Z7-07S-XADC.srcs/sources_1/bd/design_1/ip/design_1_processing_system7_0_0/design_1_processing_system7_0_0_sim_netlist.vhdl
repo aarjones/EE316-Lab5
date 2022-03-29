@@ -1,10 +1,10 @@
--- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Mon Oct 22 13:12:01 2018
--- Host        : WK142 running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
+-- Date        : Tue Mar 29 11:39:52 2022
+-- Host        : Aaron5800X running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl
+--               C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : design_1_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -3432,7 +3432,7 @@ entity design_1_processing_system7_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_processing_system7_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of design_1_processing_system7_0_0 : entity is "processing_system7_v5_5_processing_system7,Vivado 2018.2";
+  attribute X_CORE_INFO of design_1_processing_system7_0_0 : entity is "processing_system7_v5_5_processing_system7,Vivado 2019.1.3";
 end design_1_processing_system7_0_0;
 
 architecture STRUCTURE of design_1_processing_system7_0_0 is

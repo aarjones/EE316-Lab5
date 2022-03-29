@@ -223,9 +223,6 @@ entity design_1_xadc_wiz_0_0_axi_xadc is
 
    -- Fan-Out attributes for XST
 
-   ATTRIBUTE MAX_FANOUT                    : string;
-   ATTRIBUTE MAX_FANOUT   of s_axi_aclk    : signal is "10000";
-   ATTRIBUTE MAX_FANOUT   of s_axi_aresetn : signal is "10000";
 
    -----------------------------------------------------------------
    -- Start of PSFUtil MPD attributes

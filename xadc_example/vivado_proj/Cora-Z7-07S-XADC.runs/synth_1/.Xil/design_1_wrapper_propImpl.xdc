@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/src/constraints/Cora-Z7-07S-Master.xdc rfile:../../../../src/constraints/Cora-Z7-07S-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc rfile:../../../Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN L15   IOSTANDARD LVCMOS33 } [get_ports { pwm_0[0] }]; #IO_L22N_T3_AD7N_35 Sch=led0_b
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

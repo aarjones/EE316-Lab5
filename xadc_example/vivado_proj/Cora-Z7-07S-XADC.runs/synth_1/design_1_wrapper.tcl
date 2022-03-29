@@ -23,30 +23,31 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.cache/wt [current_project]
-set_property parent.project_path D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.cache/wt [current_project]
+set_property parent.project_path C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths D:/Github/vivado-boards/new/board_files [current_project]
+set_property board_part_repo_paths {C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.board} [current_project]
 set_property board_part digilentinc.com:cora-z7-07s:part0:1.0 [current_project]
-set_property ip_repo_paths d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/repo [current_project]
-set_property ip_output_repo d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/repo/cache [current_project]
+set_property ip_repo_paths c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0 [current_project]
+update_ip_catalog
+set_property ip_output_repo c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/imports/hdl/design_1_wrapper.v
-add_files D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/imports/hdl/design_1_wrapper.v
+add_files C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -56,12 +57,12 @@ set_property used_in_implementation false [get_files -all D:/Github/releases/in-
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/src/constraints/Cora-Z7-07S-Master.xdc
-set_property used_in_implementation false [get_files D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/src/constraints/Cora-Z7-07S-Master.xdc]
+read_xdc C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
-set_param ips.enableIPCacheLiteLoad 0
+set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 synth_design -top design_1_wrapper -part xc7z007sclg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off

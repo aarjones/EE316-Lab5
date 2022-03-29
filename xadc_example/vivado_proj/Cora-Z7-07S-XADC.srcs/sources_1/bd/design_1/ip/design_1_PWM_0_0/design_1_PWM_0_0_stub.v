@@ -1,10 +1,10 @@
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Oct 22 13:11:52 2018
-// Host        : WK142 running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
+// Date        : Tue Mar 29 11:39:50 2022
+// Host        : Aaron5800X running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/design_1_PWM_0_0_stub.v
+//               C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/design_1_PWM_0_0_stub.v
 // Design      : design_1_PWM_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z007sclg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "PWM_v2_0,Vivado 2018.2" *)
+(* X_CORE_INFO = "PWM_v2_0,Vivado 2019.1.3" *)
 module design_1_PWM_0_0(pwm, pwm_axi_awaddr, pwm_axi_awprot, 
   pwm_axi_awvalid, pwm_axi_awready, pwm_axi_wdata, pwm_axi_wstrb, pwm_axi_wvalid, 
   pwm_axi_wready, pwm_axi_bresp, pwm_axi_bvalid, pwm_axi_bready, pwm_axi_araddr, 

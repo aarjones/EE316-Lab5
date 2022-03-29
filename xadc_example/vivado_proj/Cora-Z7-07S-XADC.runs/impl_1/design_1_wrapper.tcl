@@ -65,24 +65,25 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param board.repoPaths D:/Github/vivado-boards/new/board_files
+  set_param chipscope.maxJobs 4
   create_project -in_memory -part xc7z007sclg400-1
-  set_property board_part_repo_paths D:/Github/vivado-boards/new/board_files [current_project]
+  set_property board_part_repo_paths {C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.board} [current_project]
   set_property board_part digilentinc.com:cora-z7-07s:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.cache/wt [current_project]
-  set_property parent.project_path D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.xpr [current_project]
-  set_property ip_repo_paths D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/repo [current_project]
-  set_property ip_output_repo D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/repo/cache [current_project]
+  set_property webtalk.parent_dir C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.cache/wt [current_project]
+  set_property parent.project_path C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.xpr [current_project]
+  set_property ip_repo_paths C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0 [current_project]
+  update_ip_catalog
+  set_property ip_output_repo C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd
+  add_files C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc D:/Github/releases/in-work/Cora-Z7/Cora-Z7-07S-XADC/src/constraints/Cora-Z7-07S-Master.xdc
+  read_xdc C:/Users/jones/Desktop/EE316-Lab5/xadc_example/vivado_proj/Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z007sclg400-1
   set_param project.isImplRun false

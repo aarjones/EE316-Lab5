@@ -1,0 +1,5 @@
+11:46:51 **** Incremental Build of configuration Debug for project DigilentExample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
