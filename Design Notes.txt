@@ -1,0 +1,19 @@
+Pins:
+	POT on ADC0
+	LDR on ADC1
+
+	Servo PWM on IO8
+	Motor/Buzzer PWM on IO9
+
+	LCD on IO 7..0
+
+	RGB LEDs
+
+	PMOD JA bottom row Buttons
+	
+Blocks:
+	Interrupts
+		Concat
+	gpio lcd
+	modify gpio for buttons
+	modify pwm blocks
