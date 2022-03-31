@@ -58,7 +58,8 @@
 
 #define READDATA_DBG 0
 #define NUMBER_OF_CHANNELS 3
-#define RGBLED_BASEADDR XPAR_PWM_0_PWM_AXI_BASEADDR
+#define SERVO_BASE_ADDR XPAR_PWM_0_PWM_AXI_BASEADDR
+#define BUZZER_BASE_ADDR XPAR_PWM_1_PWM_AXI_BASEADDR
 #define XADC_CHANNELS 0xB3630008
 #define XADC_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
 #define XADC_SEQ_CHANNELS 0xB3630800
@@ -93,12 +94,11 @@ int main()
     //Vars
     XSysMon Xadc;
 	u8 ChannelIndex = 1;
-	const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
 
 	//Initialize things
 	Xadc_Init(&Xadc, XADC_DEVICE_ID);
-	PWM_Set_Period(RGBLED_BaseAddr, 65535);
-	PWM_Enable(RGBLED_BaseAddr);
+	PWM_Set_Period(BUZZER_BASE_ADDR, 65535);
+	PWM_Enable(BUZZER_BASE_ADDR);
 	printf("About to begin wondrous things\r\n");
 
 	while(1) {
@@ -114,8 +114,8 @@ int main()
 		if (Test_Bit(ChannelValidVector, ChannelSelect)) {
 			Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
 			pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
-			PWM_Set_Period(RGBLED_BaseAddr, pwmPeriod);
-			PWM_Set_Duty(RGBLED_BaseAddr, pwmPeriod / 2, 0);
+			PWM_Set_Period(BUZZER_BASE_ADDR, pwmPeriod);
+			PWM_Set_Duty(BUZZER_BASE_ADDR, pwmPeriod / 2, 0);
 			printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
 		} else {
 			printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);

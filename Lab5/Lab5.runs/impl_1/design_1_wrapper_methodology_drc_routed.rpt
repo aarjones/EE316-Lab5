@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Mar 31 14:07:57 2022
+| Date         : Thu Mar 31 15:49:01 2022
 | Host         : AaronThinkPad running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 9
+             Violations found: 10
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 9          |
+| TIMING-18 | Warning  | Missing input or output delay | 10         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,30 +49,35 @@ Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on full_pwm relative to clock(s) clk_fpga_0
+An output delay is missing on buzzer_pwm[0] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on lcd_4bits_tri_o[0] relative to clock(s) clk_fpga_0
+An output delay is missing on full_pwm relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on lcd_4bits_tri_o[1] relative to clock(s) clk_fpga_0
+An output delay is missing on lcd_4bits_tri_o[0] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on lcd_4bits_tri_o[2] relative to clock(s) clk_fpga_0
+An output delay is missing on lcd_4bits_tri_o[1] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on lcd_4bits_tri_o[3] relative to clock(s) clk_fpga_0
+An output delay is missing on lcd_4bits_tri_o[2] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on lcd_4bits_tri_o[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#10 Warning
 Missing input or output delay  
 An output delay is missing on servo_pwm[0] relative to clock(s) clk_fpga_0
 Related violations: <none>

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Mar 31 14:07:57 2022
+| Date             : Thu Mar 31 15:49:01 2022
 | Host             : AaronThinkPad running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     3379 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |     1146 |     14400 |            7.96 |
-|   CARRY4                |    <0.001 |       74 |      4400 |            1.68 |
-|   Register              |    <0.001 |     1528 |     28800 |            5.31 |
+| Slice Logic             |     0.001 |     3841 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     1285 |     14400 |            8.92 |
+|   CARRY4                |    <0.001 |       90 |      4400 |            2.05 |
+|   Register              |    <0.001 |     1801 |     28800 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       62 |      6000 |            1.03 |
-|   Others                |     0.000 |      271 |       --- |             --- |
-| Signals                 |     0.001 |     2440 |       --- |             --- |
-| I/O                     |    <0.001 |       13 |       100 |           13.00 |
+|   Others                |     0.000 |      274 |       --- |             --- |
+| Signals                 |     0.002 |     2797 |       --- |             --- |
+| I/O                     |    <0.001 |       14 |       100 |           14.00 |
 | XADC                    |    <0.001 |        1 |       --- |             --- |
 | PS7                     |     1.251 |        1 |       --- |             --- |
 | Static Power            |     0.118 |          |           |                 |
@@ -152,6 +152,8 @@ Table of Contents
 +--------------------------+-----------+
 | design_1_wrapper         |     1.258 |
 |   design_1_i             |     1.258 |
+|     axi_timer_0          |     0.001 |
+|       U0                 |     0.001 |
 |     processing_system7_0 |     1.252 |
 |       inst               |     1.252 |
 |     ps7_0_axi_periph     |     0.002 |

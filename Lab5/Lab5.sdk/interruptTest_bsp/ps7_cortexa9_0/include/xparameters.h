@@ -32,12 +32,18 @@
  
 /******************************************************************/
 /* Definitions for driver PWM */
-#define XPAR_PWM_NUM_INSTANCES 1
+#define XPAR_PWM_NUM_INSTANCES 2
 
 /* Definitions for peripheral PWM_0 */
 #define XPAR_PWM_0_DEVICE_ID 0
 #define XPAR_PWM_0_PWM_AXI_BASEADDR 0x43C10000
 #define XPAR_PWM_0_PWM_AXI_HIGHADDR 0x43C1FFFF
+
+
+/* Definitions for peripheral PWM_1 */
+#define XPAR_PWM_1_DEVICE_ID 1
+#define XPAR_PWM_1_PWM_AXI_BASEADDR 0x43C20000
+#define XPAR_PWM_1_PWM_AXI_HIGHADDR 0x43C2FFFF
 
 
 /******************************************************************/

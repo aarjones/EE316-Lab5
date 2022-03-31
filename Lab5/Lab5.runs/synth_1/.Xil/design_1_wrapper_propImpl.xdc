@@ -302,3 +302,5 @@ set_property src_info {type:XDC file:2 line:96 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33 } [get_ports { servo_pwm }]; #IO_L21P_T3_DQS_34 Sch=ck_io[4]
 set_property src_info {type:XDC file:2 line:97 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33 } [get_ports { full_pwm }]; #IO_L21N_T3_DQS_34 Sch=ck_io[5]
+set_property src_info {type:XDC file:2 line:98 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R17   IOSTANDARD LVCMOS33 } [get_ports { buzzer_pwm }]; #IO_L19N_T3_VREF_34 Sch=ck_io[6]
