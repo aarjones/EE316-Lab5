@@ -2,10 +2,10 @@ Pins:
 	POT on ADC0
 	LDR on ADC1
 
-	Servo PWM on IO8
-	Motor/Buzzer PWM on IO9
+	Servo PWM on IO4
+	Motor/Buzzer PWM on IO5
 
-	LCD on IO 7..0
+	LCD on IO 3..0
 
 	RGB LEDs
 
