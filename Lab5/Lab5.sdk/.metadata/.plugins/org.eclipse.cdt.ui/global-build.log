@@ -1,0 +1,2177 @@
+14:26:16 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:55:16: error: unknown type name 'XSysMon'
+ void Xadc_Init(XSysMon *InstancePtr, u32 DeviceId);
+                ^~~~~~~
+../src/helloworld.c:56:20: error: unknown type name 'XSysMon'
+ u32 Xadc_ReadData (XSysMon *InstancePtr, u16 RawData[32]);
+                    ^~~~~~~
+../src/helloworld.c:58:16: error: unknown type name 'XSysMon'
+ void Xadc_Demo(XSysMon *InstancePtr, u32 RGBLED_BaseAddr, u32 ChannelSelect);
+                ^~~~~~~
+../src/helloworld.c:60:23: error: 'NUMBER' undeclared here (not in a function)
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                       ^~~~~~
+../src/helloworld.c:60:29: error: expected ']' before 'OF'
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                             ^~~
+                             ]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:5: error: unknown type name 'XSysMon'
+     XSysMon Xadc;
+     ^~~~~~~
+../src/helloworld.c:72:2: error: unknown type name 'XGpio'
+  XGpio Btn;
+  ^~~~~
+../src/helloworld.c:74:30: error: 'RGBLED_BASEADDR' undeclared (first use in this function); did you mean 'RGBLED_BaseAddr'?
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+                              ^~~~~~~~~~~~~~~
+                              RGBLED_BaseAddr
+../src/helloworld.c:74:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:75:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:79:2: warning: implicit declaration of function 'Xadc_Init' [-Wimplicit-function-declaration]
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+  ^~~~~~~~~
+../src/helloworld.c:79:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:83:3: warning: implicit declaration of function 'Xadc_Demo' [-Wimplicit-function-declaration]
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+   ^~~~~~~~~
+../src/helloworld.c:83:37: error: 'Channel_List' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                     ^~~~~~~~~~~~
+                                     ChannelIndex
+../src/helloworld.c:83:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:76:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:75:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:75:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:73:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:72:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c:71:5: warning: variable 'ChannelIndex' set but not used [-Wunused-but-set-variable]
+  u8 ChannelIndex = 0;
+     ^~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:90:16: error: unknown type name 'XSysMon'
+ void Xadc_Init(XSysMon *InstancePtr, u32 DeviceId) {
+                ^~~~~~~
+../src/helloworld.c:119:20: error: unknown type name 'XSysMon'
+ u32 Xadc_ReadData (XSysMon *InstancePtr, u16 RawData[32])
+                    ^~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:161:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:170:16: error: unknown type name 'XSysMon'
+ void Xadc_Demo(XSysMon *InstancePtr, u32 RGBLED_BaseAddr, u32 ChannelSelect) {
+                ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:26:55 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:67:23: error: 'NUMBER' undeclared here (not in a function)
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                       ^~~~~~
+../src/helloworld.c:67:29: error: expected ']' before 'OF'
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                             ^~~
+                             ]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:30: error: 'RGBLED_BASEADDR' undeclared (first use in this function); did you mean 'RGBLED_BaseAddr'?
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+                              ^~~~~~~~~~~~~~~
+                              RGBLED_BaseAddr
+../src/helloworld.c:81:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:82:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:90:37: error: 'Channel_List' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                     ^~~~~~~~~~~~
+                                     ChannelIndex
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:83:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:82:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:82:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:80:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:79:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c:78:5: warning: variable 'ChannelIndex' set but not used [-Wunused-but-set-variable]
+  u8 ChannelIndex = 0;
+     ^~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:142:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'ChannelSelect'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        ChannelSelect
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:27:24 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:67:23: error: 'NUMBER' undeclared here (not in a function)
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                       ^~~~~~
+../src/helloworld.c:67:29: error: expected ']' before 'OF'
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                             ^~~
+                             ]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:30: error: 'RGBLED_BASEADDR' undeclared (first use in this function); did you mean 'RGBLED_BaseAddr'?
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+                              ^~~~~~~~~~~~~~~
+                              RGBLED_BaseAddr
+../src/helloworld.c:81:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:82:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:90:37: error: 'Channel_List' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                     ^~~~~~~~~~~~
+                                     ChannelIndex
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:83:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:82:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:82:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:80:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:79:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c:78:5: warning: variable 'ChannelIndex' set but not used [-Wunused-but-set-variable]
+  u8 ChannelIndex = 0;
+     ^~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:142:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'ChannelSelect'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        ChannelSelect
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:27:26 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:67:23: error: 'NUMBER' undeclared here (not in a function)
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                       ^~~~~~
+../src/helloworld.c:67:29: error: expected ']' before 'OF'
+ const u8 Channel_List[NUMBER OF CHANNELS] = {
+                             ^~~
+                             ]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:30: error: 'RGBLED_BASEADDR' undeclared (first use in this function); did you mean 'RGBLED_BaseAddr'?
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+                              ^~~~~~~~~~~~~~~
+                              RGBLED_BaseAddr
+../src/helloworld.c:81:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:82:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:90:37: error: 'Channel_List' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                     ^~~~~~~~~~~~
+                                     ChannelIndex
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:83:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:82:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:82:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:80:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:79:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c:78:5: warning: variable 'ChannelIndex' set but not used [-Wunused-but-set-variable]
+  u8 ChannelIndex = 0;
+     ^~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:142:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'ChannelSelect'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        ChannelSelect
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:27:44 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:30: error: 'RGBLED_BASEADDR' undeclared (first use in this function); did you mean 'RGBLED_BaseAddr'?
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+                              ^~~~~~~~~~~~~~~
+                              RGBLED_BaseAddr
+../src/helloworld.c:81:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:82:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:83:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:82:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:82:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:80:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:79:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:142:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:27:49 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:30: error: 'RGBLED_BASEADDR' undeclared (first use in this function); did you mean 'RGBLED_BaseAddr'?
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+                              ^~~~~~~~~~~~~~~
+                              RGBLED_BaseAddr
+../src/helloworld.c:81:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:82:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:83:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:82:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:82:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:80:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:79:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:142:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:28:20 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:2: error: unknown type name 'Debounce'
+  Debounce Btn0_Db, Btn1_Db;
+  ^~~~~~~~
+../src/helloworld.c:87:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:87:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:91:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:84:6: warning: unused variable 'time_count' [-Wunused-variable]
+  u32 time_count = 0;
+      ^~~~~~~~~~
+../src/helloworld.c:83:20: warning: unused variable 'Btn1_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+                    ^~~~~~~
+../src/helloworld.c:83:11: warning: unused variable 'Btn0_Db' [-Wunused-variable]
+  Debounce Btn0_Db, Btn1_Db;
+           ^~~~~~~
+../src/helloworld.c:81:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:80:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:110:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:143:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:169:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:185:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:187:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:150:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:28:32 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:85:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:85:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:89:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:81:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:80:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:108:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:141:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:167:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:183:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:185:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:28:35 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:85:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:85:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:89:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:81:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:80:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:108:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XSM_SEQ_CH_TEMP'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XSM_SEQ_CH_TEMP
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:141:25: error: 'XADC_CHANNELS' undeclared (first use in this function)
+   if (((1 << Channel) & XADC_CHANNELS) != 0) {
+                         ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:167:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:183:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:185:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'Xadc_ReadData':
+../src/helloworld.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:28:54 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:86:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:82:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:81:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XADC_CHANNELS'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XADC_CHANNELS
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:28:55 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:86:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:86:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:90:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:82:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:81:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:109:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XADC_CHANNELS'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XADC_CHANNELS
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:168:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:184:40: error: 'Channel_Names' undeclared (first use in this function); did you mean 'Channel_List'?
+   printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                        ^~~~~~~~~~~~~
+                                        Channel_List
+../src/helloworld.c:186:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:29:24 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:97:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:93:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:92:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:120:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XADC_CHANNELS'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XADC_CHANNELS
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:179:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:197:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:29:25 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:19: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  Xadc_Init(&Xadc, XADC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+                   UART_DEVICE_ID
+../src/helloworld.c:97:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:93:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:92:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:120:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XADC_CHANNELS'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XADC_CHANNELS
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:179:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:197:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:29:48 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:102:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:94:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:93:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_Init':
+../src/helloworld.c:121:39: error: 'XADC_SEQ_CHANNELS' undeclared (first use in this function); did you mean 'XADC_CHANNELS'?
+  XSysMon_SetSeqInputMode(InstancePtr, XADC_SEQ_CHANNELS);
+                                       ^~~~~~~~~~~~~~~~~
+                                       XADC_CHANNELS
+../src/helloworld.c:121:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:180:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:198:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:30:01 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:64: error: expected ';' before '}' token
+   Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex])
+                                                                ^
+                                                                ;
+  }
+  ~                                                              
+../src/helloworld.c:95:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:94:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:181:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:199:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:30:14 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'Btn_Data' [-Wunused-variable]
+  u32 Btn_Data;
+      ^~~~~~~~
+../src/helloworld.c:94:8: warning: unused variable 'Btn' [-Wunused-variable]
+  XGpio Btn;
+        ^~~
+../src/helloworld.c: In function 'Xadc_RawToVoltage':
+../src/helloworld.c:181:6: warning: implicit declaration of function 'Test_Bit' [-Wimplicit-function-declaration]
+  if (Test_Bit(Data, 15)) {
+      ^~~~~~~~
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:199:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `Xadc_RawToVoltage':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:181: undefined reference to `Test_Bit'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `Xadc_Demo':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:195: undefined reference to `Test_Bit'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:199: undefined reference to `RGBLED_SetColor'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:201: undefined reference to `RGBLED_SetColor'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:203: undefined reference to `RGBLED_SetColor'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:206: undefined reference to `RGBLED_SetColor'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: interruptTest.elf] Error 1
+14:31:11 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:198:4: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+    RGBLED_SetColor(RGBLED_BaseAddr, 0x0000, 0x8000, 0x0000);
+    ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `Xadc_Demo':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:198: undefined reference to `RGBLED_SetColor'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:200: undefined reference to `RGBLED_SetColor'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:202: undefined reference to `RGBLED_SetColor'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:205: undefined reference to `RGBLED_SetColor'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: interruptTest.elf] Error 1
+14:31:44 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:199:3: warning: implicit declaration of function 'RGBLED_SetColor' [-Wimplicit-function-declaration]
+   RGBLED_SetColor(RGBLED_BaseAddr, 0, 0, 0);
+   ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `Xadc_Demo':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:199: undefined reference to `RGBLED_SetColor'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: interruptTest.elf] Error 1
+14:31:55 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64316	   2728	  23328	  90372	  16104	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:32:39 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64444	   2728	  23328	  90500	  16184	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:33:00 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64444	   2728	  23328	  90500	  16184	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:34:13 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:3: warning: implicit declaration of function 'sleepMs'; did you mean 'sleep_MB'? [-Wimplicit-function-declaration]
+   sleepMs(500);
+   ^~~~~~~
+   sleep_MB
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:103: undefined reference to `sleepMs'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: interruptTest.elf] Error 1
+14:34:31 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:3: error: too few arguments to function 'sleep'
+   sleep();
+   ^~~~~
+In file included from ../src/helloworld.c:54:
+../../interruptTest_bsp/ps7_cortexa9_0/include/sleep.h:101:6: note: declared here
+ void sleep(unsigned int seconds);
+      ^~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:39:10 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64444	   2728	  23328	  90500	  16184	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:39:59 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:3: warning: implicit declaration of function 'sleepu'; did you mean 'sleep'? [-Wimplicit-function-declaration]
+   sleepu(500000);
+   ^~~~~~
+   sleep
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:103: undefined reference to `sleepu'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: interruptTest.elf] Error 1
+14:40:10 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64444	   2728	  23328	  90500	  16184	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:41:57 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:198:24: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u16 *' {aka 'short unsigned int *'} [-Wformat=]
+   printf("Analog Raw: %u\r\n\r\n",Xadc_RawData);
+                       ~^          ~~~~~~~~~~~~
+                       %hn
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64468	   2728	  23328	  90524	  1619c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:42:26 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:42:55 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64468	   2728	  23328	  90524	  1619c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:43:15 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:198:24: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u16 (*)[32]' {aka 'short unsigned int (*)[32]'} [-Wformat=]
+   printf("Analog Raw: %u\r\n\r\n",&Xadc_RawData);
+                       ~^          ~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64468	   2728	  23328	  90524	  1619c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:43:46 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64532	   2728	  23328	  90588	  161dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:43:52 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:44:38 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64532	   2728	  23328	  90588	  161dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:44:58 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64532	   2728	  23328	  90588	  161dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:45:40 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64532	   2728	  23328	  90588	  161dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:46:07 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Xadc_Demo':
+../src/helloworld.c:198:24: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   printf("Analog Raw: %u\r\n\r\n",(u32)Xadc_RawData[ChannelSelect]);
+                       ~^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       %lu
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64532	   2728	  23328	  90588	  161dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:50:43 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:3: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+   ^~~~~~~~~~~~~~~~~~
+   ChannelIndex
+../src/helloworld.c:105:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:105:38: error: 'InstancePtr' undeclared (first use in this function)
+   ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+                                      ^~~~~~~~~~~
+../src/helloworld.c:106:36: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   if (Test_Bit(ChannelValidVector, ChannelSelect)) {
+                                    ^~~~~~~~~~~~~
+../src/helloworld.c:65:37: note: in definition of macro 'Test_Bit'
+ #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+                                     ^~~
+../src/helloworld.c:108:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+../src/helloworld.c:95:5: warning: unused variable 'ChannelIndex' [-Wunused-variable]
+  u8 ChannelIndex = 1;
+     ^~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:51:18 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:3: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   ChannelValidVector = Xadc_ReadData(Xadc, Xadc_RawData);
+   ^~~~~~~~~~~~~~~~~~
+   ChannelIndex
+../src/helloworld.c:105:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:105:38: error: incompatible type for argument 1 of 'Xadc_ReadData'
+   ChannelValidVector = Xadc_ReadData(Xadc, Xadc_RawData);
+                                      ^~~~
+../src/helloworld.c:68:29: note: expected 'XSysMon *' {aka 'struct <anonymous> *'} but argument is of type 'XSysMon' {aka 'struct <anonymous>'}
+ u32 Xadc_ReadData (XSysMon *InstancePtr, u16 RawData[32]);
+                    ~~~~~~~~~^~~~~~~~~~~
+../src/helloworld.c:107:67: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+                                                                   ^~~~~~~~~~~~~
+                                                                   ChannelIndex
+../src/helloworld.c:108:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:51:30 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:3: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
+   ^~~~~~~~~~~~~~~~~~
+   ChannelIndex
+../src/helloworld.c:105:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:107:67: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+                                                                   ^~~~~~~~~~~~~
+                                                                   ChannelIndex
+../src/helloworld.c:108:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:52:03 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:67: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+                                                                   ^~~~~~~~~~~~~
+                                                                   ChannelIndex
+../src/helloworld.c:109:67: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:52:22 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:82: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelIndex], ChannelSelect));
+                                                                                  ^~~~~~~~~~~~~
+                                                                                  ChannelIndex
+../src/helloworld.c:109:82: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:52:32 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:55: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                       ^~~~~~~~~~~~~
+                                                       ChannelIndex
+../src/helloworld.c:110:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:52:38 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:87: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelIndex], Xadc_VoltageData)
+                                                                                       ^
+                                                                                       ;
+   } else {
+   ~                                                                                    
+../src/helloworld.c:112:53: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);
+                                                     ^~~~~~~~~~~~~
+                                                     ChannelIndex
+../src/helloworld.c:112:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:52:58 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:53: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);
+                                                     ^~~~~~~~~~~~~
+                                                     ChannelIndex
+../src/helloworld.c:112:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:53:05 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:53: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelIndex]);
+                                                     ^~~~~~~~~~~~~
+                                                     ChannelIndex
+../src/helloworld.c:112:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:53:07 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:53: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelIndex]);
+                                                     ^~~~~~~~~~~~~
+                                                     ChannelIndex
+../src/helloworld.c:112:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:53:18 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:53: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelIndex]);
+                                                     ^~~~~~~~~~~~~
+                                                     ChannelIndex
+../src/helloworld.c:112:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:53:34 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64724	   2728	  23328	  90780	  1629c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:54:48 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:3: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'ChannelIndex'?
+   ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
+   ^~~~~~~~~~~~~~~~~~
+   ChannelIndex
+../src/helloworld.c:105:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:107:67: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+                                                                   ^~~~~~~~~~~~~
+                                                                   ChannelIndex
+../src/helloworld.c:108:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:55:05 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:67: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'ChannelIndex'?
+    Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+                                                                   ^~~~~~~~~~~~~
+                                                                   ChannelIndex
+../src/helloworld.c:109:67: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:88: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData)
+                                                                                        ^
+                                                                                        ;
+   } else {
+   ~                                                                                     
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:55:38 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:101: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[Channel_List[ChannelIndex]], Xadc_VoltageData)
+                                                                                                     ^
+                                                                                                     ;
+   } else {
+   ~                                                                                                  
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:55:47 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64788	   2728	  23328	  90844	  162dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:55:50 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:56:31 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64596	   2728	  23328	  90652	  1621c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:58:11 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64788	   2728	  23328	  90844	  162dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:58:32 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64724	   2728	  23328	  90780	  1629c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:58:46 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64788	   2728	  23328	  90844	  162dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:59:24 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64788	   2728	  23328	  90844	  162dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:59:42 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:12: warning: unused variable 'RGBLED_BaseAddr' [-Wunused-variable]
+  const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+            ^~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64788	   2728	  23328	  90844	  162dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+14:59:44 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:06:04 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64916	   2728	  23328	  90972	  1635c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:07:48 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64916	   2728	  23328	  90972	  1635c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:07:49 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:08:53 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64916	   2728	  23328	  90972	  1635c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:10:01 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64916	   2728	  23328	  90972	  1635c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:24:39 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:116:4: error: 'pwmPeriod' undeclared (first use in this function)
+    pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535);
+    ^~~~~~~~~
+../src/helloworld.c:116:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:7: warning: unused variable 'pwmDuty' [-Wunused-variable]
+   int pwmDuty;
+       ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:24:51 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:28:26 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:29:13 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:29:35 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:30:06 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:116:55: error: expected ')' before ';' token
+    pwmPeriod = (int)((Xadc_VoltageData / 1.650 * 65535;
+                      ~                                ^
+                                                       )
+../src/helloworld.c:119:89: error: expected ')' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                                                                         ^
+                                                                                         )
+   } else {
+   ~                                                                                      
+../src/helloworld.c:116:21: note: to match this '('
+    pwmPeriod = (int)((Xadc_VoltageData / 1.650 * 65535;
+                     ^
+../src/helloworld.c:119:89: error: expected ';' before '}' token
+    printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                                                                         ^
+                                                                                         ;
+   } else {
+   ~                                                                                      
+../src/helloworld.c:110:7: warning: variable 'pwmPeriod' set but not used [-Wunused-but-set-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:30:25 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:32:03 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:32:27 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:34:10 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:34:29 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:34:50 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:36:23 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+15:36:39 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
