@@ -3,7 +3,7 @@ Pins:
 	LDR on ADC1
 
 	Servo PWM on IO4
-	Motor/Buzzer PWM on IO5
+	Motor/Buzzer/LEDs PWM Timer on IO5
 
 	LCD on IO 3..0
 
