@@ -70,6 +70,9 @@ u32 Xadc_ReadData (XSysMon *InstancePtr, u16 RawData[32]);
 float Xadc_RawToVoltage(u16 Data, u8 Channel);
 void Xadc_Demo(XSysMon *InstancePtr, u32 RGBLED_BaseAddr, u32 ChannelSelect);
 float fixNegatives(float orig);
+float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect);
+void setBuzzerPWM(float xadcVoltage);
+void setServoPWM(float xadcVoltage);
 
 const u8 Channel_List[NUMBER_OF_CHANNELS] = {
 		3,
@@ -94,39 +97,64 @@ int main()
     //Vars
     XSysMon Xadc;
 	u8 ChannelIndex = 1;
+	float xadc_voltageData;
 
-	//Initialize things
+	/* ****** Initialize things ******* */
+	//XADC
 	Xadc_Init(&Xadc, XADC_DEVICE_ID);
+	//PWM for Buzzer
 	PWM_Set_Period(BUZZER_BASE_ADDR, 65535);
 	PWM_Enable(BUZZER_BASE_ADDR);
+	//PWM for Servo
+	PWM_Set_Period(SERVO_BASE_ADDR, 1000000);
+	PWM_Enable(SERVO_BASE_ADDR);
+
+
 	printf("About to begin wondrous things\r\n");
 
 	while(1) {
 		//vars setup
-		u16 Xadc_RawData[32];
-		u32 ChannelValidVector;
-		u32 ChannelSelect = Channel_List[ChannelIndex];
-		float Xadc_VoltageData;
-		int pwmPeriod;
+		u32 channelSelect = Channel_List[ChannelIndex];
 
 		//read ADC
-		ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
-		if (Test_Bit(ChannelValidVector, ChannelSelect)) {
-			Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
-			pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
-			PWM_Set_Period(BUZZER_BASE_ADDR, pwmPeriod);
-			PWM_Set_Duty(BUZZER_BASE_ADDR, pwmPeriod / 2, 0);
-			printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
-		} else {
-			printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);
-		}
+		xadc_voltageData = xadc_readFull(&Xadc, channelSelect);
 
-		//sleep for 0.5 seconds
-		usleep(20000);
+		//Deal with Buzzer PWM
+		setBuzzerPWM(xadc_voltageData);
+		setServoPWM(xadc_voltageData);
+
+		//sleep for 20 ms
+		usleep(20 * 1000);
 	}
 
     cleanup_platform();
     return 0;
+}
+
+void setServoPWM(float xadcVoltage) {
+	int pwmPeriod = (2.5 + ((10/1.650) * xadcVoltage)) * 10000;
+	PWM_Set_Duty(SERVO_BASE_ADDR, pwmPeriod, 0);
+}
+
+void setBuzzerPWM(float xadcVoltage) {
+	int pwmPeriod = (int)(xadcVoltage / 1.650 * 65535) + 65535/12;
+	PWM_Set_Period(BUZZER_BASE_ADDR, pwmPeriod);
+	PWM_Set_Duty(BUZZER_BASE_ADDR, pwmPeriod / 2, 0);
+}
+
+float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect) {
+	u16 Xadc_RawData[32];
+	u32 ChannelValidVector;
+	float Xadc_VoltageData;
+
+	ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+	if (Test_Bit(ChannelValidVector, channelSelect)) {
+		Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[channelSelect], channelSelect));
+		//printf("Analog Input %s: %.3fV\r\n", Channel_Names[channelSelect], Xadc_VoltageData);
+	} else {
+		//printf("Channel %d (%s) Not Available\r\n", (int)channelSelect, Channel_Names[channelSelect]);
+	}
+	return Xadc_VoltageData;
 }
 
 void Xadc_Init(XSysMon *InstancePtr, u32 DeviceId) {

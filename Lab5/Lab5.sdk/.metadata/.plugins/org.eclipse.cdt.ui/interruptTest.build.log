@@ -1,4 +1,4 @@
-15:52:50 **** Incremental Build of configuration Debug for project interruptTest ****
+11:23:52 **** Incremental Build of configuration Debug for project interruptTest ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+  65108	   2728	  23328	  91164	  1641c	interruptTest.elf
 'Finished building: interruptTest.elf.size'
 ' '
 
-15:52:51 Build Finished (took 825ms)
+11:23:52 Build Finished (took 782ms)
 

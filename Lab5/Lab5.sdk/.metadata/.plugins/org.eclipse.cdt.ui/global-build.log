@@ -2364,3 +2364,882 @@ arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
   64980	   2728	  23328	  91036	  1639c	interruptTest.elf
 'Finished building: interruptTest.elf.size'
 ' '
+10:42:21 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+10:45:58 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+10:46:22 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:7: warning: variable 'pwmPeriod' set but not used [-Wunused-but-set-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64916	   2728	  23328	  90972	  1635c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+10:48:42 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:17: error: 'BUZZER_BASE_ADR' undeclared (first use in this function); did you mean 'BUZZER_BASE_ADDR'?
+  PWM_Set_Period(BUZZER_BASE_ADR, 1000000)
+                 ^~~~~~~~~~~~~~~
+                 BUZZER_BASE_ADDR
+../src/helloworld.c:100:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:100:42: error: expected ';' before 'PWM_Enable'
+  PWM_Set_Period(BUZZER_BASE_ADR, 1000000)
+                                          ^
+                                          ;
+../src/helloworld.c:102:2:
+  PWM_Enable(BUZZER_BASE_ADDR);
+  ~~~~~~~~~~                               
+../src/helloworld.c:111:7: warning: variable 'pwmPeriod' set but not used [-Wunused-but-set-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:48:57 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:17: error: 'BUZZER_BASE_ADR' undeclared (first use in this function); did you mean 'BUZZER_BASE_ADDR'?
+  PWM_Set_Period(BUZZER_BASE_ADR, 1000000);
+                 ^~~~~~~~~~~~~~~
+                 BUZZER_BASE_ADDR
+../src/helloworld.c:100:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:111:7: warning: variable 'pwmPeriod' set but not used [-Wunused-but-set-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:49:14 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:111:7: warning: variable 'pwmPeriod' set but not used [-Wunused-but-set-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64916	   2728	  23328	  90972	  1635c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+10:49:15 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:52:25 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:106:2: warning: implicit declaration of function 'PWM_enable'; did you mean 'PWM_Enable'? [-Wimplicit-function-declaration]
+  PWM_enable(SERVO_BASE_ADDR);
+  ^~~~~~~~~~
+  PWM_Enable
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\interruptTest\Debug/../src/helloworld.c:106: undefined reference to `PWM_enable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: interruptTest.elf] Error 1
+10:52:37 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64980	   2728	  23328	  91036	  1639c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+10:55:23 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:140:1: error: number of arguments doesn't match prototype
+ float xadc_readFull() {
+ ^~~~~
+../src/helloworld.c:73:7: error: prototype declaration
+ float xadc_readFull(XSysMon *InstancePtr);
+       ^~~~~~~~~~~~~
+../src/helloworld.c:141:2: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'Channel_List'?
+  ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
+  ^~~~~~~~~~~~~~~~~~
+  Channel_List
+../src/helloworld.c:141:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:141:38: error: 'Xadc' undeclared (first use in this function)
+  ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
+                                      ^~~~
+../src/helloworld.c:141:44: error: 'Xadc_RawData' undeclared (first use in this function); did you mean 'Xadc_ReadData'?
+  ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
+                                            ^~~~~~~~~~~~
+                                            Xadc_ReadData
+../src/helloworld.c:142:37: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'Channel_List'?
+    if (Test_Bit(ChannelValidVector, ChannelSelect)) {
+                                     ^~~~~~~~~~~~~
+../src/helloworld.c:66:37: note: in definition of macro 'Test_Bit'
+ #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+                                     ^~~
+../src/helloworld.c:143:5: error: 'Xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_ReadData'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+     ^~~~~~~~~~~~~~~~
+     Xadc_ReadData
+../src/helloworld.c:144:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:151:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:55:56 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:141:2: warning: statement with no effect [-Wunused-value]
+  16 Xadc_RawData[32];
+  ^~
+../src/helloworld.c:141:4: error: expected ';' before 'Xadc_RawData'
+  16 Xadc_RawData[32];
+    ^~~~~~~~~~~~~
+    ;
+../src/helloworld.c:143:2: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'Channel_List'?
+  ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+  ^~~~~~~~~~~~~~~~~~
+  Channel_List
+../src/helloworld.c:143:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:143:50: error: 'Xadc_RawData' undeclared (first use in this function); did you mean 'Xadc_ReadData'?
+  ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+                                                  ^~~~~~~~~~~~
+                                                  Xadc_ReadData
+../src/helloworld.c:144:37: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'Channel_List'?
+    if (Test_Bit(ChannelValidVector, ChannelSelect)) {
+                                     ^~~~~~~~~~~~~
+../src/helloworld.c:66:37: note: in definition of macro 'Test_Bit'
+ #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+                                     ^~~
+../src/helloworld.c:145:5: error: 'Xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_ReadData'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+     ^~~~~~~~~~~~~~~~
+     Xadc_ReadData
+../src/helloworld.c:146:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:153:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:56:00 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:143:2: error: 'ChannelValidVector' undeclared (first use in this function); did you mean 'Channel_List'?
+  ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+  ^~~~~~~~~~~~~~~~~~
+  Channel_List
+../src/helloworld.c:143:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:144:37: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'Channel_List'?
+    if (Test_Bit(ChannelValidVector, ChannelSelect)) {
+                                     ^~~~~~~~~~~~~
+../src/helloworld.c:66:37: note: in definition of macro 'Test_Bit'
+ #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+                                     ^~~
+../src/helloworld.c:145:5: error: 'Xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_RawData'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+     ^~~~~~~~~~~~~~~~
+     Xadc_RawData
+../src/helloworld.c:146:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:153:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:56:17 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:145:37: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'Channel_List'?
+    if (Test_Bit(ChannelValidVector, ChannelSelect)) {
+                                     ^~~~~~~~~~~~~
+../src/helloworld.c:66:37: note: in definition of macro 'Test_Bit'
+ #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+                                     ^~~
+../src/helloworld.c:145:37: note: each undeclared identifier is reported only once for each function it appears in
+    if (Test_Bit(ChannelValidVector, ChannelSelect)) {
+                                     ^~~~~~~~~~~~~
+../src/helloworld.c:66:37: note: in definition of macro 'Test_Bit'
+ #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+                                     ^~~
+../src/helloworld.c:146:5: error: 'Xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_RawData'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+     ^~~~~~~~~~~~~~~~
+     Xadc_RawData
+../src/helloworld.c:147:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:56:55 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:146:5: error: 'Xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_RawData'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+     ^~~~~~~~~~~~~~~~
+     Xadc_RawData
+../src/helloworld.c:146:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:146:68: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'channelSelect'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect));
+                                                                    ^~~~~~~~~~~~~
+                                                                    channelSelect
+../src/helloworld.c:147:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:57:04 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:146:5: error: 'Xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_RawData'?
+     Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[channelSelect], channelSelect));
+     ^~~~~~~~~~~~~~~~
+     Xadc_RawData
+../src/helloworld.c:146:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:147:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:150:56: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'channelSelect'?
+     printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                                        ^~~~~~~~~~~~~
+                                                        channelSelect
+../src/helloworld.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:57:18 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:148:5: error: 'pwmPeriod' undeclared (first use in this function)
+     pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+     ^~~~~~~~~
+../src/helloworld.c:148:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:151:56: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'channelSelect'?
+     printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                                        ^~~~~~~~~~~~~
+                                                        channelSelect
+../src/helloworld.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:57:25 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:148:56: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'channelSelect'?
+     printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
+                                                        ^~~~~~~~~~~~~
+                                                        channelSelect
+../src/helloworld.c:148:56: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:152:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:57:32 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'xadc_readFull':
+../src/helloworld.c:150:54: error: 'ChannelSelect' undeclared (first use in this function); did you mean 'channelSelect'?
+     printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);
+                                                      ^~~~~~~~~~~~~
+                                                      channelSelect
+../src/helloworld.c:150:54: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:152:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+10:57:55 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65236	   2728	  23328	  91292	  1649c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+10:59:30 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:3: error: 'xadc_VoltageData' undeclared (first use in this function); did you mean 'Xadc_VoltageData'?
+   xadc_VoltageData = xadc_readFull(&Xadc, channelSelect);
+   ^~~~~~~~~~~~~~~~
+   Xadc_VoltageData
+../src/helloworld.c:118:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:121:3: error: 'pwmPeriod' undeclared (first use in this function)
+   pwmPeriod = (int)(Xadc_VoltageData / 1.650 * 65535) + 65535/12;
+   ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:00:01 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:121:3: error: 'pwmPeriod' undeclared (first use in this function)
+   pwmPeriod = (int)(xadc_voltageData / 1.650 * 65535) + 65535/12;
+   ^~~~~~~~~
+../src/helloworld.c:121:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:00:14 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65044	   2728	  23328	  91100	  163dc	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:00:16 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:06:08 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:124:16: error: 'xadcVoltage' undeclared (first use in this function); did you mean 'xadc_voltageData'?
+   setBuzzerPWM(xadcVoltage);
+                ^~~~~~~~~~~
+                xadc_voltageData
+../src/helloworld.c:124:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:118:7: warning: unused variable 'pwmPeriod' [-Wunused-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+../src/helloworld.c:100:8: warning: variable 'xadc_voltageData' set but not used [-Wunused-but-set-variable]
+  float xadc_voltageData;
+        ^~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'setBuzzerPWM':
+../src/helloworld.c:140:24: error: 'xadc_voltageData' undeclared (first use in this function); did you mean 'xadcVoltage'?
+  int pwmPeriod = (int)(xadc_voltageData / 1.650 * 65535) + 65535/12;
+                        ^~~~~~~~~~~~~~~~
+                        xadcVoltage
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:06:21 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:124:16: error: 'xadcVoltage' undeclared (first use in this function); did you mean 'xadc_voltageData'?
+   setBuzzerPWM(xadcVoltage);
+                ^~~~~~~~~~~
+                xadc_voltageData
+../src/helloworld.c:124:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:118:7: warning: unused variable 'pwmPeriod' [-Wunused-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+../src/helloworld.c:100:8: warning: variable 'xadc_voltageData' set but not used [-Wunused-but-set-variable]
+  float xadc_voltageData;
+        ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:06:24 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:124:16: error: 'xadcVoltage' undeclared (first use in this function); did you mean 'xadc_voltageData'?
+   setBuzzerPWM(xadcVoltage);
+                ^~~~~~~~~~~
+                xadc_voltageData
+../src/helloworld.c:124:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:118:7: warning: unused variable 'pwmPeriod' [-Wunused-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+../src/helloworld.c:100:8: warning: variable 'xadc_voltageData' set but not used [-Wunused-but-set-variable]
+  float xadc_voltageData;
+        ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:06:46 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:7: warning: unused variable 'pwmPeriod' [-Wunused-variable]
+   int pwmPeriod;
+       ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65172	   2728	  23328	  91228	  1645c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:06:49 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:13:09 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:15:15 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65172	   2728	  23328	  91228	  1645c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:16:13 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'setServoPWM':
+../src/helloworld.c:136:25: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("Servo Period: %f", pwmPeriod);
+                        ~^   ~~~~~~~~~
+                        %d
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65124	   2728	  23328	  91180	  1642c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:16:26 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'setServoPWM':
+../src/helloworld.c:136:25: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("Servo Period: %f\r\n", pwmPeriod);
+                        ~^       ~~~~~~~~~
+                        %d
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65124	   2728	  23328	  91180	  1642c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:16:45 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'setServoPWM':
+../src/helloworld.c:135:63: error: expected ')' before ';' token
+  int pwmPeriod = ((2.5 + ((10/1.650) * xadcVoltage)) * 1000000;
+                  ~                                            ^
+                                                               )
+../src/helloworld.c:138:1: error: expected ',' or ';' before '}' token
+ }
+ ^
+../src/helloworld.c:260:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/helloworld.c:135:6: warning: unused variable 'pwmPeriod' [-Wunused-variable]
+  int pwmPeriod = ((2.5 + ((10/1.650) * xadcVoltage)) * 1000000;
+      ^~~~~~~~~
+At top level:
+../src/helloworld.c:255:7: warning: 'fixNegatives' defined but not used [-Wunused-function]
+ float fixNegatives(float orig) {
+       ^~~~~~~~~~~~
+../src/helloworld.c:241:6: warning: 'Xadc_Demo' defined but not used [-Wunused-function]
+ void Xadc_Demo(XSysMon *InstancePtr, u32 RGBLED_BaseAddr, u32 ChannelSelect) {
+      ^~~~~~~~~
+../src/helloworld.c:161:6: warning: 'Xadc_Init' defined but not used [-Wunused-function]
+ void Xadc_Init(XSysMon *InstancePtr, u32 DeviceId) {
+      ^~~~~~~~~
+../src/helloworld.c:146:7: warning: 'xadc_readFull' defined but not used [-Wunused-function]
+ float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect) {
+       ^~~~~~~~~~~~~
+../src/helloworld.c:140:6: warning: 'setBuzzerPWM' defined but not used [-Wunused-function]
+ void setBuzzerPWM(float xadcVoltage) {
+      ^~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+11:16:47 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'setServoPWM':
+../src/helloworld.c:136:25: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("Servo Period: %f\r\n", pwmPeriod);
+                        ~^       ~~~~~~~~~
+                        %d
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65188	   2728	  23328	  91244	  1646c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:16:55 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65188	   2728	  23328	  91244	  1646c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:18:40 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65124	   2728	  23328	  91180	  1642c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:18:42 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:19:15 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65124	   2728	  23328	  91180	  1642c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:20:25 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65124	   2728	  23328	  91180	  1642c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:22:36 **** Auto Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65188	   2728	  23328	  91244	  1646c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:22:38 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:22:47 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65108	   2728	  23328	  91164	  1641c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '
+11:23:52 **** Incremental Build of configuration Debug for project interruptTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../interruptTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: interruptTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../interruptTest_bsp/ps7_cortexa9_0/lib -o "interruptTest.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: interruptTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size interruptTest.elf  |tee "interruptTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  65108	   2728	  23328	  91164	  1641c	interruptTest.elf
+'Finished building: interruptTest.elf.size'
+' '

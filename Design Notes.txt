@@ -19,5 +19,17 @@ Blocks:
 	modify gpio for buttons
 	modify pwm blocks
 	
-Processor Frequency: 650 MHz?
-	What about timers?
+Processor Frequency: 
+	PWM Component runs at 50 MHz
+		Period: 1000000 = 20 ms
+	
+We're able to:
+	Read XADC voltage (0-1.650)
+	Set Servo PWM from 2.5-12.5%
+	Set Buzzer PWM period 
+	
+We need to add:
+	Set motor/LED pwm (same code)
+	Interrupts for buttons
+	Interrupts for running code currently in while(1)
+	Display modes on LCD
