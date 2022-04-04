@@ -40,3 +40,7 @@ Adding component instance block -- digilentinc.com:IP:PWM:2.0 - PWM_1
 Successfully read diagram <design_1> from BD file <C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/design_1.bd>
 open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.953 ; gain = 74.535
 regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  4 12:58:27 2022...

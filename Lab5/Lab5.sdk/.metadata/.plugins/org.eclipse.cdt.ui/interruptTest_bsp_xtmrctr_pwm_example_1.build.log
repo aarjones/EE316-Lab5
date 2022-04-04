@@ -1,0 +1,8 @@
+11:29:11 **** Auto Build of configuration Debug for project interruptTest_bsp_xtmrctr_pwm_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+11:29:11 Build Finished (took 210ms)
+

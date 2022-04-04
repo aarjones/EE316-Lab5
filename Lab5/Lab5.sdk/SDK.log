@@ -3459,3 +3459,1129 @@ con
 ----------------End of Script----------------
 
 11:23:56 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:29:10 INFO  : Example project interruptTest_bsp_xtmrctr_pwm_example_1 has been created successfully.
+11:37:43 INFO  : Disconnected from the channel tcfchan#11.
+11:37:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:37:44 INFO  : 'fpga -state' command is executed.
+11:37:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:44 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:37:44 INFO  : 'jtag frequency' command is executed.
+11:37:44 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:37:45 INFO  : Context for 'APU' is selected.
+11:37:46 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:37:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:37:46 INFO  : Context for 'APU' is selected.
+11:37:46 INFO  : 'stop' command is executed.
+11:37:46 INFO  : 'ps7_init' command is executed.
+11:37:46 INFO  : 'ps7_post_config' command is executed.
+11:37:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:37:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:47 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:37:47 INFO  : 'configparams force-mem-access 0' command is executed.
+11:37:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:37:47 INFO  : Memory regions updated for context APU
+11:37:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:47 INFO  : 'con' command is executed.
+11:37:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:37:47 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:39:08 INFO  : Disconnected from the channel tcfchan#12.
+11:39:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:39:09 INFO  : 'fpga -state' command is executed.
+11:39:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:09 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:39:09 INFO  : 'jtag frequency' command is executed.
+11:39:09 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:39:09 INFO  : Context for 'APU' is selected.
+11:39:11 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:39:11 INFO  : 'configparams force-mem-access 1' command is executed.
+11:39:11 INFO  : Context for 'APU' is selected.
+11:39:11 INFO  : 'stop' command is executed.
+11:39:11 INFO  : 'ps7_init' command is executed.
+11:39:11 INFO  : 'ps7_post_config' command is executed.
+11:39:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:39:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:12 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:12 INFO  : 'configparams force-mem-access 0' command is executed.
+11:39:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:12 INFO  : Memory regions updated for context APU
+11:39:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:12 INFO  : 'con' command is executed.
+11:39:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:39:12 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:39:26 INFO  : Disconnected from the channel tcfchan#13.
+11:39:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:39:27 INFO  : 'fpga -state' command is executed.
+11:39:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:27 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:39:27 INFO  : 'jtag frequency' command is executed.
+11:39:27 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:39:27 INFO  : Context for 'APU' is selected.
+11:39:29 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:39:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:39:29 INFO  : Context for 'APU' is selected.
+11:39:29 INFO  : 'stop' command is executed.
+11:39:29 INFO  : 'ps7_init' command is executed.
+11:39:29 INFO  : 'ps7_post_config' command is executed.
+11:39:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:39:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:29 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:29 INFO  : 'configparams force-mem-access 0' command is executed.
+11:39:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:29 INFO  : Memory regions updated for context APU
+11:39:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:29 INFO  : 'con' command is executed.
+11:39:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:39:29 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:42:43 INFO  : Disconnected from the channel tcfchan#14.
+11:42:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:42:44 INFO  : 'fpga -state' command is executed.
+11:42:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:42:44 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:42:44 INFO  : 'jtag frequency' command is executed.
+11:42:44 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:42:44 INFO  : Context for 'APU' is selected.
+11:42:46 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:42:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:42:46 INFO  : Context for 'APU' is selected.
+11:42:46 INFO  : 'stop' command is executed.
+11:42:46 INFO  : 'ps7_init' command is executed.
+11:42:46 INFO  : 'ps7_post_config' command is executed.
+11:42:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:42:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:46 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:42:46 INFO  : 'configparams force-mem-access 0' command is executed.
+11:42:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:42:46 INFO  : Memory regions updated for context APU
+11:42:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:47 INFO  : 'con' command is executed.
+11:42:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:42:47 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:43:21 INFO  : Disconnected from the channel tcfchan#15.
+11:43:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:43:22 INFO  : 'fpga -state' command is executed.
+11:43:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:22 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:43:22 INFO  : 'jtag frequency' command is executed.
+11:43:22 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:43:22 INFO  : Context for 'APU' is selected.
+11:43:24 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:43:24 INFO  : 'configparams force-mem-access 1' command is executed.
+11:43:24 INFO  : Context for 'APU' is selected.
+11:43:24 INFO  : 'stop' command is executed.
+11:43:24 INFO  : 'ps7_init' command is executed.
+11:43:24 INFO  : 'ps7_post_config' command is executed.
+11:43:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:43:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:24 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:24 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:24 INFO  : Memory regions updated for context APU
+11:43:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:24 INFO  : 'con' command is executed.
+11:43:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:43:24 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:43:42 INFO  : Disconnected from the channel tcfchan#16.
+11:43:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:43:43 INFO  : 'fpga -state' command is executed.
+11:43:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:43 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:43:43 INFO  : 'jtag frequency' command is executed.
+11:43:43 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:43:43 INFO  : Context for 'APU' is selected.
+11:43:45 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:43:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:43:45 INFO  : Context for 'APU' is selected.
+11:43:45 INFO  : 'stop' command is executed.
+11:43:45 INFO  : 'ps7_init' command is executed.
+11:43:45 INFO  : 'ps7_post_config' command is executed.
+11:43:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:43:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:45 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:45 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:45 INFO  : Memory regions updated for context APU
+11:43:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:46 INFO  : 'con' command is executed.
+11:43:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:43:46 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:44:20 INFO  : Disconnected from the channel tcfchan#17.
+11:44:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:44:21 INFO  : 'fpga -state' command is executed.
+11:44:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:21 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:44:21 INFO  : 'jtag frequency' command is executed.
+11:44:21 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:21 INFO  : Context for 'APU' is selected.
+11:44:23 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:44:23 INFO  : 'configparams force-mem-access 1' command is executed.
+11:44:23 INFO  : Context for 'APU' is selected.
+11:44:23 INFO  : 'stop' command is executed.
+11:44:23 INFO  : 'ps7_init' command is executed.
+11:44:23 INFO  : 'ps7_post_config' command is executed.
+11:44:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:44:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:24 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:24 INFO  : 'configparams force-mem-access 0' command is executed.
+11:44:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:44:24 INFO  : Memory regions updated for context APU
+11:44:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:24 INFO  : 'con' command is executed.
+11:44:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:44:24 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:44:34 INFO  : Disconnected from the channel tcfchan#18.
+11:44:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:44:35 INFO  : 'fpga -state' command is executed.
+11:44:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:35 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:44:36 INFO  : 'jtag frequency' command is executed.
+11:44:36 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:36 INFO  : Context for 'APU' is selected.
+11:44:37 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:44:37 INFO  : 'configparams force-mem-access 1' command is executed.
+11:44:37 INFO  : Context for 'APU' is selected.
+11:44:37 INFO  : 'stop' command is executed.
+11:44:38 INFO  : 'ps7_init' command is executed.
+11:44:38 INFO  : 'ps7_post_config' command is executed.
+11:44:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:44:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:38 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:38 INFO  : 'configparams force-mem-access 0' command is executed.
+11:44:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:44:38 INFO  : Memory regions updated for context APU
+11:44:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:38 INFO  : 'con' command is executed.
+11:44:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:44:38 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:44:50 INFO  : Disconnected from the channel tcfchan#19.
+11:44:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:44:51 INFO  : 'fpga -state' command is executed.
+11:44:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:51 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:44:51 INFO  : 'jtag frequency' command is executed.
+11:44:51 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:51 INFO  : Context for 'APU' is selected.
+11:44:52 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:44:52 INFO  : 'configparams force-mem-access 1' command is executed.
+11:44:52 INFO  : Context for 'APU' is selected.
+11:44:52 INFO  : 'stop' command is executed.
+11:44:53 INFO  : 'ps7_init' command is executed.
+11:44:53 INFO  : 'ps7_post_config' command is executed.
+11:44:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:44:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:53 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:53 INFO  : 'configparams force-mem-access 0' command is executed.
+11:44:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:44:53 INFO  : Memory regions updated for context APU
+11:44:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:53 INFO  : 'con' command is executed.
+11:44:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:44:53 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:45:12 INFO  : Disconnected from the channel tcfchan#20.
+11:45:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:45:13 INFO  : 'fpga -state' command is executed.
+11:45:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:13 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:45:13 INFO  : 'jtag frequency' command is executed.
+11:45:13 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:45:13 INFO  : Context for 'APU' is selected.
+11:45:15 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:45:15 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:15 INFO  : Context for 'APU' is selected.
+11:45:15 INFO  : 'stop' command is executed.
+11:45:15 INFO  : 'ps7_init' command is executed.
+11:45:15 INFO  : 'ps7_post_config' command is executed.
+11:45:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:45:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:16 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:45:16 INFO  : 'configparams force-mem-access 0' command is executed.
+11:45:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:45:16 INFO  : Memory regions updated for context APU
+11:45:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:16 INFO  : 'con' command is executed.
+11:45:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:45:16 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:45:28 INFO  : Disconnected from the channel tcfchan#21.
+11:45:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:45:29 INFO  : 'fpga -state' command is executed.
+11:45:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:29 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:45:29 INFO  : 'jtag frequency' command is executed.
+11:45:29 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:45:29 INFO  : Context for 'APU' is selected.
+11:45:31 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:45:31 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:31 INFO  : Context for 'APU' is selected.
+11:45:31 INFO  : 'stop' command is executed.
+11:45:31 INFO  : 'ps7_init' command is executed.
+11:45:31 INFO  : 'ps7_post_config' command is executed.
+11:45:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:45:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:31 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:45:31 INFO  : 'configparams force-mem-access 0' command is executed.
+11:45:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:45:31 INFO  : Memory regions updated for context APU
+11:45:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:31 INFO  : 'con' command is executed.
+11:45:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:45:31 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:45:43 INFO  : Disconnected from the channel tcfchan#22.
+11:45:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:45:44 INFO  : 'fpga -state' command is executed.
+11:45:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:44 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:45:44 INFO  : 'jtag frequency' command is executed.
+11:45:44 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:45:45 INFO  : Context for 'APU' is selected.
+11:45:46 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:45:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:46 INFO  : Context for 'APU' is selected.
+11:45:46 INFO  : 'stop' command is executed.
+11:45:47 INFO  : 'ps7_init' command is executed.
+11:45:47 INFO  : 'ps7_post_config' command is executed.
+11:45:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:45:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:47 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:45:47 INFO  : 'configparams force-mem-access 0' command is executed.
+11:45:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:45:47 INFO  : Memory regions updated for context APU
+11:45:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:47 INFO  : 'con' command is executed.
+11:45:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:45:47 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:45:58 INFO  : Disconnected from the channel tcfchan#23.
+11:45:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:45:59 INFO  : 'fpga -state' command is executed.
+11:45:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:59 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:45:59 INFO  : 'jtag frequency' command is executed.
+11:45:59 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:45:59 INFO  : Context for 'APU' is selected.
+11:46:01 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:46:01 INFO  : 'configparams force-mem-access 1' command is executed.
+11:46:01 INFO  : Context for 'APU' is selected.
+11:46:01 INFO  : 'stop' command is executed.
+11:46:01 INFO  : 'ps7_init' command is executed.
+11:46:01 INFO  : 'ps7_post_config' command is executed.
+11:46:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:46:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:02 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:46:02 INFO  : 'configparams force-mem-access 0' command is executed.
+11:46:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:46:02 INFO  : Memory regions updated for context APU
+11:46:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:02 INFO  : 'con' command is executed.
+11:46:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:46:02 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:47:01 INFO  : Disconnected from the channel tcfchan#24.
+11:47:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:47:02 INFO  : 'fpga -state' command is executed.
+11:47:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:02 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:47:02 INFO  : 'jtag frequency' command is executed.
+11:47:02 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:47:02 INFO  : Context for 'APU' is selected.
+11:47:04 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:47:04 INFO  : 'configparams force-mem-access 1' command is executed.
+11:47:04 INFO  : Context for 'APU' is selected.
+11:47:04 INFO  : 'stop' command is executed.
+11:47:04 INFO  : 'ps7_init' command is executed.
+11:47:04 INFO  : 'ps7_post_config' command is executed.
+11:47:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:47:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:04 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:47:04 INFO  : 'configparams force-mem-access 0' command is executed.
+11:47:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:47:04 INFO  : Memory regions updated for context APU
+11:47:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:05 INFO  : 'con' command is executed.
+11:47:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:47:05 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:48:56 INFO  : Disconnected from the channel tcfchan#25.
+11:48:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:48:57 INFO  : 'fpga -state' command is executed.
+11:48:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:48:57 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:48:57 INFO  : 'jtag frequency' command is executed.
+11:48:57 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:48:57 INFO  : Context for 'APU' is selected.
+11:48:58 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:48:58 INFO  : 'configparams force-mem-access 1' command is executed.
+11:48:58 INFO  : Context for 'APU' is selected.
+11:48:58 INFO  : 'stop' command is executed.
+11:48:59 INFO  : 'ps7_init' command is executed.
+11:48:59 INFO  : 'ps7_post_config' command is executed.
+11:48:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:48:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:59 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:48:59 INFO  : 'configparams force-mem-access 0' command is executed.
+11:48:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:48:59 INFO  : Memory regions updated for context APU
+11:48:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:59 INFO  : 'con' command is executed.
+11:48:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:48:59 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:59:13 INFO  : Disconnected from the channel tcfchan#26.
+11:59:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:59:14 INFO  : 'fpga -state' command is executed.
+11:59:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:14 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:59:14 INFO  : 'jtag frequency' command is executed.
+11:59:14 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:59:14 INFO  : Context for 'APU' is selected.
+11:59:15 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:59:15 INFO  : 'configparams force-mem-access 1' command is executed.
+11:59:15 INFO  : Context for 'APU' is selected.
+11:59:15 INFO  : 'stop' command is executed.
+11:59:16 INFO  : 'ps7_init' command is executed.
+11:59:16 INFO  : 'ps7_post_config' command is executed.
+11:59:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:59:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:16 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:59:16 INFO  : 'configparams force-mem-access 0' command is executed.
+11:59:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:59:16 INFO  : Memory regions updated for context APU
+11:59:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:16 INFO  : 'con' command is executed.
+11:59:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:59:16 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:59:35 INFO  : Disconnected from the channel tcfchan#27.
+11:59:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:59:36 INFO  : 'fpga -state' command is executed.
+11:59:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:36 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:59:36 INFO  : 'jtag frequency' command is executed.
+11:59:36 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:59:37 INFO  : Context for 'APU' is selected.
+11:59:38 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:59:38 INFO  : 'configparams force-mem-access 1' command is executed.
+11:59:38 INFO  : Context for 'APU' is selected.
+11:59:38 INFO  : 'stop' command is executed.
+11:59:38 INFO  : 'ps7_init' command is executed.
+11:59:38 INFO  : 'ps7_post_config' command is executed.
+11:59:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:59:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:39 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:59:39 INFO  : 'configparams force-mem-access 0' command is executed.
+11:59:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:59:39 INFO  : Memory regions updated for context APU
+11:59:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:39 INFO  : 'con' command is executed.
+11:59:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:59:39 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+11:59:51 INFO  : Disconnected from the channel tcfchan#28.
+11:59:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+11:59:52 INFO  : 'fpga -state' command is executed.
+11:59:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:52 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+11:59:52 INFO  : 'jtag frequency' command is executed.
+11:59:52 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:59:52 INFO  : Context for 'APU' is selected.
+11:59:53 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:59:53 INFO  : 'configparams force-mem-access 1' command is executed.
+11:59:53 INFO  : Context for 'APU' is selected.
+11:59:53 INFO  : 'stop' command is executed.
+11:59:54 INFO  : 'ps7_init' command is executed.
+11:59:54 INFO  : 'ps7_post_config' command is executed.
+11:59:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:59:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:54 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:59:54 INFO  : 'configparams force-mem-access 0' command is executed.
+11:59:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:59:54 INFO  : Memory regions updated for context APU
+11:59:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:54 INFO  : 'con' command is executed.
+11:59:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+11:59:54 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:01:17 INFO  : Disconnected from the channel tcfchan#29.
+12:01:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:01:18 INFO  : 'fpga -state' command is executed.
+12:01:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:01:18 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:01:18 INFO  : 'jtag frequency' command is executed.
+12:01:18 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:01:18 INFO  : Context for 'APU' is selected.
+12:01:19 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:01:19 INFO  : 'configparams force-mem-access 1' command is executed.
+12:01:19 INFO  : Context for 'APU' is selected.
+12:01:19 INFO  : 'stop' command is executed.
+12:01:20 INFO  : 'ps7_init' command is executed.
+12:01:20 INFO  : 'ps7_post_config' command is executed.
+12:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:01:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:01:20 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:01:20 INFO  : 'configparams force-mem-access 0' command is executed.
+12:01:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:01:20 INFO  : Memory regions updated for context APU
+12:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:01:20 INFO  : 'con' command is executed.
+12:01:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:01:20 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:02:59 INFO  : Disconnected from the channel tcfchan#30.
+12:03:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:03:00 INFO  : 'fpga -state' command is executed.
+12:03:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:03:01 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:03:01 INFO  : 'jtag frequency' command is executed.
+12:03:01 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:03:01 INFO  : Context for 'APU' is selected.
+12:03:02 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:03:02 INFO  : 'configparams force-mem-access 1' command is executed.
+12:03:02 INFO  : Context for 'APU' is selected.
+12:03:02 INFO  : 'stop' command is executed.
+12:03:02 INFO  : 'ps7_init' command is executed.
+12:03:02 INFO  : 'ps7_post_config' command is executed.
+12:03:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:03:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:03 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:03:03 INFO  : 'configparams force-mem-access 0' command is executed.
+12:03:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:03:03 INFO  : Memory regions updated for context APU
+12:03:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:03 INFO  : 'con' command is executed.
+12:03:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:03:03 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:07:00 INFO  : Disconnected from the channel tcfchan#31.
+12:07:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:07:01 INFO  : 'fpga -state' command is executed.
+12:07:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:01 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:07:01 INFO  : 'jtag frequency' command is executed.
+12:07:01 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:07:01 INFO  : Context for 'APU' is selected.
+12:07:02 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:07:02 INFO  : 'configparams force-mem-access 1' command is executed.
+12:07:02 INFO  : Context for 'APU' is selected.
+12:07:02 INFO  : 'stop' command is executed.
+12:07:03 INFO  : 'ps7_init' command is executed.
+12:07:03 INFO  : 'ps7_post_config' command is executed.
+12:07:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:07:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:03 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:07:03 INFO  : 'configparams force-mem-access 0' command is executed.
+12:07:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:07:03 INFO  : Memory regions updated for context APU
+12:07:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:03 INFO  : 'con' command is executed.
+12:07:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:07:03 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:07:15 INFO  : Disconnected from the channel tcfchan#32.
+12:07:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:07:16 INFO  : 'fpga -state' command is executed.
+12:07:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:16 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:07:16 INFO  : 'jtag frequency' command is executed.
+12:07:16 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:07:16 INFO  : Context for 'APU' is selected.
+12:07:18 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:07:18 INFO  : 'configparams force-mem-access 1' command is executed.
+12:07:18 INFO  : Context for 'APU' is selected.
+12:07:18 INFO  : 'stop' command is executed.
+12:07:18 INFO  : 'ps7_init' command is executed.
+12:07:18 INFO  : 'ps7_post_config' command is executed.
+12:07:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:07:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:18 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:07:18 INFO  : 'configparams force-mem-access 0' command is executed.
+12:07:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:07:19 INFO  : Memory regions updated for context APU
+12:07:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:19 INFO  : 'con' command is executed.
+12:07:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:07:19 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:07:29 INFO  : Disconnected from the channel tcfchan#33.
+12:07:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:07:30 INFO  : 'fpga -state' command is executed.
+12:07:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:31 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:07:31 INFO  : 'jtag frequency' command is executed.
+12:07:31 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:07:31 INFO  : Context for 'APU' is selected.
+12:07:32 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:07:32 INFO  : 'configparams force-mem-access 1' command is executed.
+12:07:32 INFO  : Context for 'APU' is selected.
+12:07:32 INFO  : 'stop' command is executed.
+12:07:32 INFO  : 'ps7_init' command is executed.
+12:07:32 INFO  : 'ps7_post_config' command is executed.
+12:07:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:07:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:33 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:07:33 INFO  : 'configparams force-mem-access 0' command is executed.
+12:07:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:07:33 INFO  : Memory regions updated for context APU
+12:07:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:33 INFO  : 'con' command is executed.
+12:07:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:07:33 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:07:51 INFO  : Disconnected from the channel tcfchan#34.
+12:07:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:07:52 INFO  : 'fpga -state' command is executed.
+12:07:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:52 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:07:52 INFO  : 'jtag frequency' command is executed.
+12:07:52 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:07:52 INFO  : Context for 'APU' is selected.
+12:07:54 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:07:54 INFO  : 'configparams force-mem-access 1' command is executed.
+12:07:54 INFO  : Context for 'APU' is selected.
+12:07:54 INFO  : 'stop' command is executed.
+12:07:54 INFO  : 'ps7_init' command is executed.
+12:07:54 INFO  : 'ps7_post_config' command is executed.
+12:07:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:07:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:54 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:07:54 INFO  : 'configparams force-mem-access 0' command is executed.
+12:07:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:07:54 INFO  : Memory regions updated for context APU
+12:07:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:54 INFO  : 'con' command is executed.
+12:07:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:07:54 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
+12:08:07 INFO  : Disconnected from the channel tcfchan#35.
+12:08:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1' command is executed.
+12:08:08 INFO  : 'fpga -state' command is executed.
+12:08:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:08:08 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370AFD299A' is selected.
+12:08:08 INFO  : 'jtag frequency' command is executed.
+12:08:08 INFO  : Sourcing of 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:08:08 INFO  : Context for 'APU' is selected.
+12:08:09 INFO  : Hardware design information is loaded from 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:08:09 INFO  : 'configparams force-mem-access 1' command is executed.
+12:08:09 INFO  : Context for 'APU' is selected.
+12:08:09 INFO  : 'stop' command is executed.
+12:08:10 INFO  : 'ps7_init' command is executed.
+12:08:10 INFO  : 'ps7_post_config' command is executed.
+12:08:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:08:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:08:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:08:10 INFO  : The application 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:08:10 INFO  : 'configparams force-mem-access 0' command is executed.
+12:08:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:08:10 INFO  : Memory regions updated for context APU
+12:08:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:08:10 INFO  : 'con' command is executed.
+12:08:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0
+con
+----------------End of Script----------------
+
+12:08:10 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_interrupttest.elf_on_local.tcl'
