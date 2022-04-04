@@ -162,7 +162,7 @@ proc create_root_design { parentCell } {
 
   set btns_3bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_3bits ]
 
-  set lcd_4bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 lcd_4bits ]
+  set lcd_6bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 lcd_6bits ]
 
   set ldr [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 ldr ]
 
@@ -194,7 +194,7 @@ proc create_root_design { parentCell } {
   set axi_gpio_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1 ]
   set_property -dict [ list \
    CONFIG.C_ALL_OUTPUTS {1} \
-   CONFIG.C_GPIO_WIDTH {4} \
+   CONFIG.C_GPIO_WIDTH {6} \
    CONFIG.GPIO_BOARD_INTERFACE {Custom} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_gpio_1
@@ -703,7 +703,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net Vaux0_0_1 [get_bd_intf_ports pot] [get_bd_intf_pins xadc_wiz_0/Vaux0]
   connect_bd_intf_net -intf_net Vaux1_0_1 [get_bd_intf_ports ldr] [get_bd_intf_pins xadc_wiz_0/Vaux1]
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports btns_3bits] [get_bd_intf_pins axi_gpio_0/GPIO]
-  connect_bd_intf_net -intf_net axi_gpio_1_GPIO [get_bd_intf_ports lcd_4bits] [get_bd_intf_pins axi_gpio_1/GPIO]
+  connect_bd_intf_net -intf_net axi_gpio_1_GPIO [get_bd_intf_ports lcd_6bits] [get_bd_intf_pins axi_gpio_1/GPIO]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]

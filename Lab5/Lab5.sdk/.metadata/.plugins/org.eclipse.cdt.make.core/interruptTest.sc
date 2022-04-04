@@ -868,6 +868,7 @@
 <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SAT" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../arm-none-eabi/libc/usr/include"/>
+<includePath path="#undef __THUMBEL__" removed="true"/>
 <includePath path="#undef __thumb2__" removed="true"/>
 <includePath path="#undef __thumb__" removed="true"/>
 <includePath path="#undef __ARM_ARCH" removed="true"/>

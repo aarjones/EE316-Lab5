@@ -155,14 +155,14 @@ vlog -work xlconcat_v2_1_3 -64 "+incdir+../../../../Lab5.srcs/sources_1/bd/desig
 vlog -work xil_defaultlib -64 "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
 
+vlog -work xil_defaultlib -64 -sv -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_PWM_1_0/sim/design_1_PWM_1_0.sv" \
+
 vlog -work axi_protocol_converter_v2_1_19 -64 "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
-
-vlog -work xil_defaultlib -64 -sv -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_PWM_1_0/sim/design_1_PWM_1_0.sv" \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_1/sim/design_1.vhd" \

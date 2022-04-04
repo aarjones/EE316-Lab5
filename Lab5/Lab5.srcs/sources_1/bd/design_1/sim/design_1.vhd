@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Thu Mar 31 15:44:01 2022
+--Date        : Mon Apr  4 14:08:53 2022
 --Host        : AaronThinkPad running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2066,7 +2066,7 @@ entity design_1 is
     btns_3bits_tri_i : in STD_LOGIC_VECTOR ( 2 downto 0 );
     buzzer_pwm : out STD_LOGIC_VECTOR ( 0 to 0 );
     full_pwm : out STD_LOGIC;
-    lcd_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    lcd_6bits_tri_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
     ldr_v_n : in STD_LOGIC;
     ldr_v_p : in STD_LOGIC;
     pot_v_n : in STD_LOGIC;
@@ -2074,7 +2074,7 @@ entity design_1 is
     servo_pwm : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=19,numReposBlks=11,numNonXlnxBlks=2,numHierBlks=8,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=3,da_ps7_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=19,numReposBlks=11,numNonXlnxBlks=2,numHierBlks=8,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=3,da_ps7_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -2185,7 +2185,7 @@ architecture STRUCTURE of design_1 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    gpio_io_o : out STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   end component design_1_axi_gpio_1_1;
   component design_1_xadc_wiz_0_0 is
@@ -2345,7 +2345,7 @@ architecture STRUCTURE of design_1 is
   signal Vaux1_0_1_V_P : STD_LOGIC;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal axi_gpio_0_ip2intc_irpt : STD_LOGIC;
-  signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal axi_timer_0_interrupt : STD_LOGIC;
   signal axi_timer_0_pwm0 : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
@@ -2561,7 +2561,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_INFO of btns_3bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 btns_3bits TRI_I";
-  attribute X_INTERFACE_INFO of lcd_4bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 lcd_4bits TRI_O";
+  attribute X_INTERFACE_INFO of lcd_6bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 lcd_6bits ";
 begin
   Vaux0_0_1_V_N <= pot_v_n;
   Vaux0_0_1_V_P <= pot_v_p;
@@ -2570,7 +2570,7 @@ begin
   axi_gpio_0_GPIO_TRI_I(2 downto 0) <= btns_3bits_tri_i(2 downto 0);
   buzzer_pwm(0) <= PWM_1_pwm(0);
   full_pwm <= axi_timer_0_pwm0;
-  lcd_4bits_tri_o(3 downto 0) <= axi_gpio_1_GPIO_TRI_O(3 downto 0);
+  lcd_6bits_tri_o(5 downto 0) <= axi_gpio_1_GPIO_TRI_O(5 downto 0);
   servo_pwm(0) <= PWM_0_pwm(0);
 PWM_0: component design_1_PWM_0_0
      port map (
@@ -2648,7 +2648,7 @@ axi_gpio_0: component design_1_axi_gpio_0_1
     );
 axi_gpio_1: component design_1_axi_gpio_1_1
      port map (
-      gpio_io_o(3 downto 0) => axi_gpio_1_GPIO_TRI_O(3 downto 0),
+      gpio_io_o(5 downto 0) => axi_gpio_1_GPIO_TRI_O(5 downto 0),
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),

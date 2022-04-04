@@ -55,10 +55,58 @@
 #include "stdio.h"
 #include "xgpio.h"
 #include "xil_types.h"
+#include "xtmrctr.h"
+#include "xil_exception.h"
 
+/*
+//AXI Timer
+#ifdef XPAR_INTC_0_DEVICE_ID
+#include "xintc.h"
+#include <stdio.h>
+#else
+#include "xscugic.h"
+#include "xil_printf.h"
+#endif
+
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+
+#ifdef __MICROBLAZE__
+#define TMRCTR_INTERRUPT_ID     XPAR_INTC_0_TMRCTR_0_VEC_ID
+#else
+#define TMRCTR_INTERRUPT_ID     XPAR_FABRIC_TMRCTR_0_VEC_ID
+#endif
+
+#ifdef XPAR_INTC_0_DEVICE_ID
+#define INTC_DEVICE_ID          XPAR_INTC_0_DEVICE_ID
+#define INTC                    XIntc
+#define INTC_HANDLER            XIntc_InterruptHandler
+#else
+#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC                    XScuGic
+#define INTC_HANDLER            XScuGic_InterruptHandler
+#endif /* XPAR_INTC_0_DEVICE_ID */
+
+//#define PWM_PERIOD              5000000     /* PWM period in (5 ms) */
+//#define TMRCTR_0                0            /* Timer 0 ID */
+//#define TMRCTR_1                1            /* Timer 1 ID */
+//#define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
+//#define MAX_DUTYCYCLE           100          /* Max duty cycle */
+//#define DUTYCYCLE_DIVISOR       4            /* Duty cycle Divisor */
+//#define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
+
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+
+int Duty_Cycle = 6000000;
+int StartPWM(XTmrCtr *TimerCounterInst);
+//XTmrCtr TimerCounterInst;  /* The instance of the Timer Counter */
+
+#define PWM_PERIOD              50000000
+
+//Digilent PWM
 #define READDATA_DBG 0
 #define NUMBER_OF_CHANNELS 3
-#define RGBLED_BASEADDR XPAR_PWM_0_PWM_AXI_BASEADDR
+#define SERVO_BASE_ADDR XPAR_PWM_0_PWM_AXI_BASEADDR
+#define BUZZER_BASE_ADDR XPAR_PWM_1_PWM_AXI_BASEADDR
 #define XADC_CHANNELS 0xB3630008
 #define XADC_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
 #define XADC_SEQ_CHANNELS 0xB3630800
@@ -69,6 +117,10 @@ u32 Xadc_ReadData (XSysMon *InstancePtr, u16 RawData[32]);
 float Xadc_RawToVoltage(u16 Data, u8 Channel);
 void Xadc_Demo(XSysMon *InstancePtr, u32 RGBLED_BaseAddr, u32 ChannelSelect);
 float fixNegatives(float orig);
+float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect);
+void setBuzzerPWM(float xadcVoltage);
+void setServoPWM(float xadcVoltage);
+//int TmrCtrPwmExample(XTmrCtr *TmrCtrInstancePtr, u16 DeviceId);
 
 const u8 Channel_List[NUMBER_OF_CHANNELS] = {
 		3,
@@ -85,43 +137,104 @@ const char *Channel_Names[32] = {
 	"A10-A11", "A1", "", "",
 	"A6-A7", "A5", "", "A3"
 };
+/*
+INTC InterruptController;  /* The instance of the Interrupt Controller */
+XTmrCtr TimerCounterInst;  /* The instance of the Timer Counter */
+//static int   PeriodTimerHit = FALSE;
+//static int   HighTimerHit = FALSE;
+
 
 int main()
 {
     init_platform();
 
+    StartPWM();
+    //TmrCtrPwmExample(&TimerCounterInst, TMRCTR_DEVICE_ID);
+
     //Vars
     XSysMon Xadc;
 	u8 ChannelIndex = 1;
-	const u32 RGBLED_BaseAddr = RGBLED_BASEADDR;
+	float xadc_voltageData;
 
-	//Initialize things
+	/* ****** Initialize things ******* */
+	//XADC
 	Xadc_Init(&Xadc, XADC_DEVICE_ID);
+	//PWM for Buzzer
+	PWM_Set_Period(BUZZER_BASE_ADDR, 65535);
+	PWM_Enable(BUZZER_BASE_ADDR);
+	//PWM for Servo
+	PWM_Set_Period(SERVO_BASE_ADDR, 1000000);
+	PWM_Enable(SERVO_BASE_ADDR);
+
+
 	printf("About to begin wondrous things\r\n");
 
 	while(1) {
-		//Xadc_Demo(&Xadc, RGBLED_BaseAddr, Channel_List[ChannelIndex]);
+		//vars setup
+		u32 channelSelect = Channel_List[ChannelIndex];
 
+		//read ADC
+		xadc_voltageData = xadc_readFull(&Xadc, channelSelect);
 
-		u16 Xadc_RawData[32];
-		u32 ChannelValidVector;
-		u32 ChannelSelect = Channel_List[ChannelIndex];
-		float Xadc_VoltageData;
+		//Deal with Buzzer PWM
+		setBuzzerPWM(xadc_voltageData);
+		setServoPWM(xadc_voltageData);
 
-		ChannelValidVector = Xadc_ReadData(&Xadc, Xadc_RawData);
-		if (Test_Bit(ChannelValidVector, ChannelSelect)) {
-			Xadc_VoltageData = Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect);
-			printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
-			printf("Analog Raw: %u\r\n\r\n",Xadc_RawData[ChannelSelect]);
-		} else {
-			printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);
-		}
-
-		usleep(500000);
+		//sleep for 20 ms
+		usleep(20 * 1000);
 	}
 
     cleanup_platform();
     return 0;
+}
+
+int StartPWM(XTmrCtr *TimerCounterInst){
+	int Status;
+
+	/*
+	* Initialize the timer counter so that it's ready to use,
+	* specify the device ID that is generated in xparameters.h
+	*/
+	Status = XTmrCtr_Initialize(TimerCounterInst, XPAR_TMRCTR_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/* Disable PWM for reconfiguration */
+	XTmrCtr_PwmDisable(TimerCounterInst);
+	XTmrCtr_PwmConfigure(TimerCounterInst, PWM_PERIOD, Duty_Cycle);
+
+	/* Enable PWM */
+    XTmrCtr_PwmEnable(TimerCounterInst);
+
+
+    return 0;
+}
+
+void setServoPWM(float xadcVoltage) {
+	int pwmPeriod = (2.5 + ((10/1.650) * xadcVoltage)) * 10000;
+	PWM_Set_Duty(SERVO_BASE_ADDR, pwmPeriod, 0);
+}
+
+void setBuzzerPWM(float xadcVoltage) {
+	int pwmPeriod = (int)(xadcVoltage / 1.650 * 65535) + 65535/12;
+	PWM_Set_Period(BUZZER_BASE_ADDR, pwmPeriod);
+	PWM_Set_Duty(BUZZER_BASE_ADDR, pwmPeriod / 2, 0);
+}
+
+float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect) {
+	u16 Xadc_RawData[32];
+	u32 ChannelValidVector;
+	float Xadc_VoltageData;
+
+	ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
+	if (Test_Bit(ChannelValidVector, channelSelect)) {
+		Xadc_VoltageData = fixNegatives(Xadc_RawToVoltage(Xadc_RawData[channelSelect], channelSelect));
+		//printf("Analog Input %s: %.3fV\r\n", Channel_Names[channelSelect], Xadc_VoltageData);
+	} else {
+		//printf("Channel %d (%s) Not Available\r\n", (int)channelSelect, Channel_Names[channelSelect]);
+	}
+	return Xadc_VoltageData;
 }
 
 void Xadc_Init(XSysMon *InstancePtr, u32 DeviceId) {

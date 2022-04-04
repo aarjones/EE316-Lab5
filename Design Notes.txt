@@ -6,7 +6,9 @@ Pins:
 	Motor/LEDs PWM Timer on IO5
 	Buzzer PWM on IO6
 
-	LCD on IO 3..0
+	LCD D3..0 on IO 3..0
+	LCD EN on IO7
+	LCD RS on IO8
 
 	RGB LEDs
 

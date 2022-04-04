@@ -2694,3 +2694,2531 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-17
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 12:08:10.604
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17
+!SESSION 2022-04-04 13:51:00.277 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-04-04 13:51:01.473
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2022-04-04 13:51:02.008
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-04-04 13:51:02.008
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-04-04 13:51:02.611
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-04-04 13:51:02.611
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.380
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.380
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.385
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.391
+!MESSAGE XSCT Command: [setws C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.612
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.613
+!MESSAGE XSCT command with result: [setws C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:08.635
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:11.985
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.122
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.124
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.127
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.140
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PWM_0": {"hier_name": "PWM_0",
+"type": "PWM",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"PWM_1": {"hier_name": "PWM_1",
+"type": "PWM",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xadc_wiz_0": {"hier_name": "xadc_wiz_0",
+"type": "xadc_wiz",
+"version": "3.3",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.143
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.146
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z007s",
+"family": "zynq",
+"timestamp": "Thu Mar 31 15:44:25 2022",
+"vivado_version": "2019.1",
+"part": "xc7z007sclg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.836
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.839
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:25.842
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.348
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.350
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.649
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.651
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.656
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.657
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.673
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.674
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.695
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:28.697
+!MESSAGE XSCT Command: [fpga -file C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:29.909
+!MESSAGE XSCT command with result: [fpga -file C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:30.709
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:30.712
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-04-04 13:51:34.939
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.942
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.948
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "650",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "50",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "525",
+}]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.948
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"PWM_0": {},
+"PWM_1": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "3",
+"interface": "S_AXI",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "3",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "3",
+"interface": "S_AXI",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "3",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+"xadc_wiz_0": {},
+}]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.978
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.994
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x42800000",
+"high": "0x4280FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"xadc_wiz_0_s_axi_lite": {"name": "xadc_wiz_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "s_axi_lite",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_0_PWM_AXI": {"name": "PWM_0",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "PWM_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_1_PWM_AXI": {"name": "PWM_1",
+"base": "0x43C20000",
+"high": "0x43C2FFFF",
+"size": "65536",
+"slaveintf": "PWM_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.997
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:34.999
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.000
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.002
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.002
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.015
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.015
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.018
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.018
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.020
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.020
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.022
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.023
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.026
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+}]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.028
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.045
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, PWM_0 PWM_1 axi_gpio_0 axi_gpio_1 axi_timer_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_0 ps7_usb_0 ps7_xadc_0 xadc_wiz_0]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.046
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.048
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Result: [null, design_1_wrapper.bit]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.048
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.050
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.050
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.056
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.057
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.063
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.064
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.083
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.084
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.208
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.209
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.212
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.213
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.218
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.219
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.224
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.225
+!MESSAGE XSCT Command: [version -server], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.227
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.227
+!MESSAGE XSCT Command: [version], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.228
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.235
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.240
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.241
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.260
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.261
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.266
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.267
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.283
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.285
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.290
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.290
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.307
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.308
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.314
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.315
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.333
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.334
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.340
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.341
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.359
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.360
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.366
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.366
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.384
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.385
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.401
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level == 0}], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.402
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.404
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.404
+!MESSAGE XSCT Command: [source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.406
+!MESSAGE XSCT command with result: [source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.406
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.428
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.429
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.454
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.454
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.456
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.456
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.476
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.477
+!MESSAGE XSCT Command: [stop], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.497
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.497
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.836
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.836
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.842
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.843
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.863
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.864
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.901
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.902
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.923
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:35.924
+!MESSAGE XSCT Command: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.109
+!MESSAGE XSCT command with result: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.110
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.111
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.192
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.377
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.377
+!MESSAGE XSCT Command: [con], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 13:51:36.389
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:27.342
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-144
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:27.360
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-144
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-04-04 14:01:28.373
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:28.374
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:28.378
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:28.378
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:31.387
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:34.389
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:37.394
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:37.394
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:40.399
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:43.400
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:46.405
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:51.338
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:52.377
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:53.252
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:53.256
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:53.257
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:53.259
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:53.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:56.271
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:01:59.273
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:02.278
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:02.278
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:05.283
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:08.285
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:11.290
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:16.468
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:16.470
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.776
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.782
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.783
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.785
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.791
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.800
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.802
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.809
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.810
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.831
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.832
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.861
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:17.862
+!MESSAGE XSCT Command: [fpga -file C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:19.075
+!MESSAGE XSCT command with result: [fpga -file C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:19.876
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:19.879
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-04-04 14:02:22.766
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.766
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.768
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.768
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.774
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.775
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.781
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.781
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.800
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.801
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.927
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.927
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.930
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.930
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.931
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.932
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.937
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.938
+!MESSAGE XSCT Command: [version -server], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.939
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.939
+!MESSAGE XSCT Command: [version], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.940
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.951
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.956
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.957
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.978
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.978
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.984
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:22.985
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.002
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.002
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.008
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.008
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.025
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.025
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.031
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.031
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.048
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.049
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.054
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.055
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.071
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.072
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.077
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.077
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.095
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.095
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.112
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level == 0}], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.113
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.114
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.114
+!MESSAGE XSCT Command: [source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.116
+!MESSAGE XSCT command with result: [source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.116
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.252
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.252
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.272
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_0]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.273
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.274
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.275
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.296
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.296
+!MESSAGE XSCT Command: [stop], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.322
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.323
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.661
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.662
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.667
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.668
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.689
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.689
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.728
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.729
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.751
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.751
+!MESSAGE XSCT Command: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.940
+!MESSAGE XSCT command with result: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.940
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.943
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:23.998
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:24.196
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:24.197
+!MESSAGE XSCT Command: [con], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:02:24.203
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:03.787
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-260
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:03.790
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-260
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-04-04 14:06:04.805
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.805
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.809
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.810
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.819
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.819
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.824
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.824
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.842
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.842
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.870
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==0} -index 1], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.871
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.873
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.874
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.875
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.875
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.881
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.881
+!MESSAGE XSCT Command: [version -server], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.883
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.883
+!MESSAGE XSCT Command: [version], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.884
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.884
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.889
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.889
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.907
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.907
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.913
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.913
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.931
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.931
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.937
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.937
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.955
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.956
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.961
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.961
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.980
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.980
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.985
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:04.986
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.004
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.004
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.010
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370AFD299A]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.010
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.028
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.028
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level == 0}], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.046
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370AFD299A" && level == 0}], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.047
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.048
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.048
+!MESSAGE XSCT Command: [source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.050
+!MESSAGE XSCT command with result: [source C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.050
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.072
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:05.073
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.386
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_1]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.387
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.388
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.389
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.410
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.411
+!MESSAGE XSCT Command: [stop], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.438
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.438
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.780
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.780
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.785
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.786
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.808
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.809
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.855
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.855
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.878
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:06.878
+!MESSAGE XSCT Command: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.065
+!MESSAGE XSCT command with result: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/interruptTest/Debug/interruptTest.elf], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.066
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.076
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.131
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.227
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.228
+!MESSAGE XSCT Command: [con], Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:06:07.235
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:11:22.940
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-311
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-04 14:11:22.942
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-311

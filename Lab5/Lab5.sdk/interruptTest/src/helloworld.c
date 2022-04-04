@@ -58,6 +58,7 @@
 #include "xtmrctr.h"
 #include "xil_exception.h"
 
+/*
 //AXI Timer
 #ifdef XPAR_INTC_0_DEVICE_ID
 #include "xintc.h"
@@ -85,13 +86,21 @@
 #define INTC_HANDLER            XScuGic_InterruptHandler
 #endif /* XPAR_INTC_0_DEVICE_ID */
 
-#define PWM_PERIOD              5000000     /* PWM period in (5 ms) */
-#define TMRCTR_0                0            /* Timer 0 ID */
-#define TMRCTR_1                1            /* Timer 1 ID */
-#define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
-#define MAX_DUTYCYCLE           100          /* Max duty cycle */
-#define DUTYCYCLE_DIVISOR       4            /* Duty cycle Divisor */
-#define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
+//#define PWM_PERIOD              5000000     /* PWM period in (5 ms) */
+//#define TMRCTR_0                0            /* Timer 0 ID */
+//#define TMRCTR_1                1            /* Timer 1 ID */
+//#define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
+//#define MAX_DUTYCYCLE           100          /* Max duty cycle */
+//#define DUTYCYCLE_DIVISOR       4            /* Duty cycle Divisor */
+//#define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
+
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+
+int Duty_Cycle = 6000000;
+int StartPWM(XTmrCtr *TimerCounterInst);
+//XTmrCtr TimerCounterInst;  /* The instance of the Timer Counter */
+
+#define PWM_PERIOD              50000000
 
 //Digilent PWM
 #define READDATA_DBG 0
@@ -111,7 +120,7 @@ float fixNegatives(float orig);
 float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect);
 void setBuzzerPWM(float xadcVoltage);
 void setServoPWM(float xadcVoltage);
-int TmrCtrPwmExample(XTmrCtr *TmrCtrInstancePtr, u16 DeviceId);
+//int TmrCtrPwmExample(XTmrCtr *TmrCtrInstancePtr, u16 DeviceId);
 
 const u8 Channel_List[NUMBER_OF_CHANNELS] = {
 		3,
@@ -128,17 +137,19 @@ const char *Channel_Names[32] = {
 	"A10-A11", "A1", "", "",
 	"A6-A7", "A5", "", "A3"
 };
-
+/*
 INTC InterruptController;  /* The instance of the Interrupt Controller */
 XTmrCtr TimerCounterInst;  /* The instance of the Timer Counter */
-static int   PeriodTimerHit = FALSE;
-static int   HighTimerHit = FALSE;
+//static int   PeriodTimerHit = FALSE;
+//static int   HighTimerHit = FALSE;
+
 
 int main()
 {
     init_platform();
 
-    TmrCtrPwmExample(&TimerCounterInst, TMRCTR_DEVICE_ID);
+    StartPWM(&TimerCounterInst);
+    //TmrCtrPwmExample(&TimerCounterInst, TMRCTR_DEVICE_ID);
 
     //Vars
     XSysMon Xadc;
@@ -177,81 +188,27 @@ int main()
     return 0;
 }
 
-int TmrCtrPwmExample(XTmrCtr *TmrCtrInstancePtr, u16 DeviceId)
-{
-	u8  DutyCycle;
-	u8  NoOfCycles;
-	u8  Div;
-	u32 Period;
-	u32 HighTime;
-	u64 WaitCount;
+int StartPWM(XTmrCtr *TimerCounterInst){
 	int Status;
 
-	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
+	/*
+	* Initialize the timer counter so that it's ready to use,
+	* specify the device ID that is generated in xparameters.h
+	*/
+	Status = XTmrCtr_Initialize(TimerCounterInst, XPAR_TMRCTR_0_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 
-	/*
-	 * Perform a self-test to ensure that the hardware was built
-	 * correctly. Timer0 is used for self test
-	 */
-	Status = XTmrCtr_SelfTest(TmrCtrInstancePtr, TMRCTR_0);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
+	/* Disable PWM for reconfiguration */
+	XTmrCtr_PwmDisable(TimerCounterInst);
+	XTmrCtr_PwmConfigure(TimerCounterInst, PWM_PERIOD, Duty_Cycle);
 
-	printf("before\r\n");
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TMRCTR_0, XTC_AUTO_RELOAD_OPTION);
-	printf("after\r\n");
+	/* Enable PWM */
+    XTmrCtr_PwmEnable(TimerCounterInst);
 
-	/*
-	 * We start with the fixed divisor and after every CYCLE_PER_DUTYCYCLE
-	 * decrement the divisor by 1, as a result Duty cycle increases
-	 * proportionally. This is done until duty cycle is reached upto
-	 * MAX_DUTYCYCLE
-	 */
-	Div = DUTYCYCLE_DIVISOR;
 
-	/* Configure PWM */
-	do {
-		/* Fail check for 0 divisor */
-		if (!Div) {
-			Status = XST_FAILURE;
-			goto err;
-		}
-
-		/* Disable PWM for reconfiguration */
-		XTmrCtr_PwmDisable(TmrCtrInstancePtr);
-
-		/* Configure PWM */
-		Period = PWM_PERIOD;
-		HighTime = PWM_PERIOD / Div--;
-		DutyCycle = XTmrCtr_PwmConfigure(TmrCtrInstancePtr, Period, HighTime);
-		if (Status != XST_SUCCESS) {
-			Status = XST_FAILURE;
-			goto err;
-		}
-
-		xil_printf("PWM Configured for Duty Cycle = %d\r\n", DutyCycle);
-
-		/* Enable PWM */
-		XTmrCtr_PwmEnable(TmrCtrInstancePtr);
-		sleep(2);
-
-		NoOfCycles = 0;
-		WaitCount = WAIT_COUNT;
-	} while (DutyCycle < MAX_DUTYCYCLE);
-
-	Status = XST_SUCCESS;
-err:
-	/* Disable PWM */
-	//XTmrCtr_PwmDisable(TmrCtrInstancePtr);
-
-	/* Disable interrupts */
-	//TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
-
-	return Status;
+    return 0;
 }
 
 void setServoPWM(float xadcVoltage) {

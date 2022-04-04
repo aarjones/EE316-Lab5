@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Mar 31 15:45:14 2022
-# Process ID: 22112
+# Start of session at: Mon Apr  4 14:11:25 2022
+# Process ID: 20560
 # Current directory: C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/synth_1/design_1_wrapper.vds
@@ -19,9 +19,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18516 
+INFO: Helper process launched with PID 14852 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 843.004 ; gain = 177.516
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 843.414 ; gain = 177.465
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
 INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2043' bound to instance 'design_1_i' of component 'design_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:85]
@@ -320,7 +320,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_1' [c:/Users/jones/
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
@@ -337,7 +337,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized1' [c:/Users/jon
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
@@ -380,9 +380,9 @@ INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (13
 INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 	Parameter C_DW bound to: 32 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
-	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
-	Parameter C_MAX_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_MAX_GPIO_WIDTH bound to: 6 - type: integer 
 	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
@@ -400,7 +400,7 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/jon
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
 	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
-	Parameter C_VECTOR_WIDTH bound to: 4 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 6 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
@@ -411,6 +411,14 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_t
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
@@ -418,6 +426,10 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
@@ -435,6 +447,14 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
@@ -442,6 +462,10 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
@@ -455,6 +479,8 @@ WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GE
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:486]
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (13#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (13#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
@@ -835,83 +861,73 @@ INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:1070]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:1080]
 INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
@@ -920,8 +936,6 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/jon
 	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
-INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
@@ -2701,7 +2715,7 @@ WARNING: [Synth 8-3331] design design_1_xadc_wiz_0_0_soft_reset has unconnected 
 WARNING: [Synth 8-3331] design design_1_xadc_wiz_0_0_soft_reset has unconnected port Bus2IP_Data[23]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1098.656 ; gain = 433.168
+Finished RTL Elaboration : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1098.781 ; gain = 432.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2714,12 +2728,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 1098.656 ; gain = 433.168
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1098.781 ; gain = 432.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 1098.656 ; gain = 433.168
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1098.781 ; gain = 432.832
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 193 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -2755,24 +2769,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1107.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1128.754 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 116 instances were transformed.
-  FDR => FDRE: 72 instances
+  A total of 128 instances were transformed.
+  FDR => FDRE: 84 instances
   FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
   FDRSE => FDRSE (FDRE, LUT4, VCC): 42 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1107.641 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1128.754 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1107.641 ; gain = 442.152
+Finished Constraint Validation : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1128.754 ; gain = 462.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1107.641 ; gain = 442.152
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1128.754 ; gain = 462.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2794,10 +2808,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/axi_timer_0. (constraint f
 Applied set_property DONT_TOUCH = true for design_1_i/PWM_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/PWM_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1107.641 ; gain = 442.152
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1128.754 ; gain = 462.805
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
@@ -2856,7 +2870,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_1_xadc_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1107.641 ; gain = 442.152
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1128.754 ; gain = 462.805
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2896,9 +2910,9 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 5     
 	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 6     
-	                6 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
 	                5 Bit    Registers := 5     
-	                4 Bit    Registers := 10    
+	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 9     
 	                2 Bit    Registers := 26    
 	                1 Bit    Registers := 283   
@@ -3113,7 +3127,7 @@ Detailed RTL Component Info :
 Module GPIO_Core__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	                4 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   5 Input     32 Bit        Muxes := 1     
@@ -3729,8 +3743,6 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[27]' (FDR) to 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[26]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[26]' (FDR) to 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[25]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[25]' (FDR) to 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[24]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[24]' (FDR) to 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[23]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[23]' (FDR) to 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[22]'
@@ -3758,8 +3770,6 @@ INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[1]' (FDR) to 'design_1_i/axi_gpio_1/U0/ip2bus_data_i_D1_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_gpio_1/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_gpio_1/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
-INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]'
@@ -3773,6 +3783,10 @@ INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]' (FDRE) to 'design_1_i/axi_gpio_1/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_gpio_1/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_gpio_1/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
@@ -3780,43 +3794,43 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[2].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[3].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[4].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[5].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_timer_0/U0/\TC_CORE_I/TIMER_CONTROL_I/generateOutPre1_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
-INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
-INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
-INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
-INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
-INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS2/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
-INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS2/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/xadc_wiz_0/U0/\INTR_CTRLR_GEN_I.ip2bus_data_int_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/xadc_wiz_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/xadc_wiz_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1107.641 ; gain = 442.152
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1128.754 ; gain = 462.805
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3828,13 +3842,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1190.855 ; gain = 525.367
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1190.191 ; gain = 524.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1241.883 ; gain = 576.395
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 1242.160 ; gain = 576.211
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3846,7 +3860,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1246.781 ; gain = 581.293
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1246.895 ; gain = 580.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3871,7 +3885,7 @@ INFO: [Synth 8-5365] Flop inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished IO Insertion : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3884,7 +3898,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3896,25 +3910,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3953,9 +3967,9 @@ Report Cell Usage:
 |4     |LUT1    |   156|
 |5     |LUT2    |   186|
 |6     |LUT3    |   428|
-|7     |LUT4    |   326|
+|7     |LUT4    |   328|
 |8     |LUT5    |   341|
-|9     |LUT6    |   385|
+|9     |LUT6    |   387|
 |10    |MUXCY   |    64|
 |11    |PS7     |     1|
 |12    |SRL16   |     1|
@@ -3963,18 +3977,18 @@ Report Cell Usage:
 |14    |SRLC32E |    47|
 |15    |XADC    |     1|
 |16    |FDR     |    32|
-|17    |FDRE    |  1756|
-|18    |FDSE    |    62|
+|17    |FDRE    |  1764|
+|18    |FDSE    |    64|
 |19    |IBUF    |     7|
-|20    |OBUF    |     7|
+|20    |OBUF    |     9|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                                                      |Module                                                         |Cells |
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                                           |                                                               |  4007|
-|2     |  design_1_i                                                                  |design_1                                                       |  3993|
+|1     |top                                                                           |                                                               |  4023|
+|2     |  design_1_i                                                                  |design_1                                                       |  4007|
 |3     |    PWM_0                                                                     |design_1_PWM_0_0                                               |   448|
 |4     |      inst                                                                    |PWM_v2_0_7                                                     |   448|
 |5     |        PWM_AXI_inst                                                          |PWM_AXI_8                                                      |   268|
@@ -3989,15 +4003,15 @@ Report Instance Areas:
 |14    |        \INTR_CTRLR_GEN.INTERRUPT_CONTROL_I                                   |interrupt_control                                              |    13|
 |15    |        gpio_core_1                                                           |GPIO_Core                                                      |    42|
 |16    |          \Not_Dual.INPUT_DOUBLE_REGS3                                        |cdc_sync                                                       |    15|
-|17    |    axi_gpio_1                                                                |design_1_axi_gpio_1_1                                          |   100|
-|18    |      U0                                                                      |axi_gpio__parameterized1                                       |   100|
-|19    |        AXI_LITE_IPIF_I                                                       |axi_lite_ipif__parameterized0                                  |    70|
-|20    |          I_SLAVE_ATTACHMENT                                                  |slave_attachment__parameterized0                               |    70|
-|21    |            I_DECODER                                                         |address_decoder__parameterized0                                |    21|
+|17    |    axi_gpio_1                                                                |design_1_axi_gpio_1_1                                          |   114|
+|18    |      U0                                                                      |axi_gpio__parameterized1                                       |   114|
+|19    |        AXI_LITE_IPIF_I                                                       |axi_lite_ipif__parameterized0                                  |    74|
+|20    |          I_SLAVE_ATTACHMENT                                                  |slave_attachment__parameterized0                               |    74|
+|21    |            I_DECODER                                                         |address_decoder__parameterized0                                |    23|
 |22    |              \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized0                                      |     1|
 |23    |              \MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1                                      |     1|
 |24    |              \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized2                                      |     1|
-|25    |        gpio_core_1                                                           |GPIO_Core__parameterized0                                      |    23|
+|25    |        gpio_core_1                                                           |GPIO_Core__parameterized0                                      |    31|
 |26    |    axi_timer_0                                                               |design_1_axi_timer_0_0                                         |   481|
 |27    |      U0                                                                      |axi_timer                                                      |   481|
 |28    |        AXI4_LITE_I                                                           |axi_lite_ipif__parameterized1                                  |   198|
@@ -4071,17 +4085,17 @@ Report Instance Areas:
 |96    |    xlconcat_0                                                                |design_1_xlconcat_0_0                                          |     0|
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 235 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:31 . Memory (MB): peak = 1250.586 ; gain = 576.113
-Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1250.586 ; gain = 585.098
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:28 . Memory (MB): peak = 1249.684 ; gain = 553.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1249.684 ; gain = 583.734
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1263.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1261.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 65 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 32 instances
@@ -4089,12 +4103,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-802 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+802 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:56 . Memory (MB): peak = 1263.648 ; gain = 849.211
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1263.648 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:53 . Memory (MB): peak = 1261.777 ; gain = 850.148
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1261.777 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 31 15:47:19 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  4 14:13:26 2022...
