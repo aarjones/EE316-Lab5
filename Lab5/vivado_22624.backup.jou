@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr  4 11:11:04 2022
+# Process ID: 22624
+# Current directory: C:/Users/jones/Desktop/EE316-Lab5/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13784 C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.xpr
+# Log file: C:/Users/jones/Desktop/EE316-Lab5/Lab5/vivado.log
+# Journal file: C:/Users/jones/Desktop/EE316-Lab5/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.xpr
+update_compile_order -fileset sources_1
+file copy -force C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/impl_1/design_1_wrapper.sysdef C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk -hwspec C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+save_bd_design
