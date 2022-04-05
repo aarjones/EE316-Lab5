@@ -29,9 +29,11 @@ We're able to:
 	Read XADC voltage (0-1.650)
 	Set Servo PWM from 2.5-12.5%
 	Set Buzzer PWM period 
-	
-We need to add:
 	Set motor/LED pwm (same code)
 	Interrupts for buttons
-	Interrupts for running code currently in while(1)
+	
+We need to add:
 	Display modes on LCD
+	Test Modes
+	Interrupts for running code currently in while(1)
+		- I don't think this is actually needed?
