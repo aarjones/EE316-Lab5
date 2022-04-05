@@ -59,42 +59,6 @@
 #include "xil_exception.h"
 #include "xscugic.h"
 
-/*
-//AXI Timer
-#ifdef XPAR_INTC_0_DEVICE_ID
-#include "xintc.h"
-#include <stdio.h>
-#else
-#include "xscugic.h"
-#include "xil_printf.h"
-#endif
-
-#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
-
-#ifdef __MICROBLAZE__
-#define TMRCTR_INTERRUPT_ID     XPAR_INTC_0_TMRCTR_0_VEC_ID
-#else
-#define TMRCTR_INTERRUPT_ID     XPAR_FABRIC_TMRCTR_0_VEC_ID
-#endif
-
-#ifdef XPAR_INTC_0_DEVICE_ID
-#define INTC_DEVICE_ID          XPAR_INTC_0_DEVICE_ID
-#define INTC                    XIntc
-#define INTC_HANDLER            XIntc_InterruptHandler
-#else
-#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
-#define INTC                    XScuGic
-#define INTC_HANDLER            XScuGic_InterruptHandler
-#endif /* XPAR_INTC_0_DEVICE_ID */
-
-//#define PWM_PERIOD              5000000     /* PWM period in (5 ms) */
-//#define TMRCTR_0                0            /* Timer 0 ID */
-//#define TMRCTR_1                1            /* Timer 1 ID */
-//#define CYCLE_PER_DUTYCYCLE     10           /* Clock cycles per duty cycle */
-//#define MAX_DUTYCYCLE           100          /* Max duty cycle */
-//#define DUTYCYCLE_DIVISOR       4            /* Duty cycle Divisor */
-//#define WAIT_COUNT              PWM_PERIOD   /* Interrupt wait counter */
-
 //Button Interrupts
 #define GPIO_DEVICE_ID		    XPAR_GPIO_0_DEVICE_ID
 #define GPIO_CHANNEL1     		1
@@ -116,7 +80,7 @@
 #define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
 int StartPWM(float xadcVoltage);
 int StartPWM2();
-#define PWM_PERIOD              2000000
+#define PWM_PERIOD              200000 //consider adding additional 0 to go back to previous
 
 //Digilent PWM
 #define READDATA_DBG 0
@@ -129,6 +93,8 @@ int StartPWM2();
 #define XADC_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
 #define XADC_SEQ_CHANNELS 0xB3630800
 #define Test_Bit(VEC,BIT) ((VEC&(1<<BIT))!=0)
+#define READ_POT 1
+#define READ_LDR 2
 
 // Functions XADC
 void Xadc_Init(XSysMon *InstancePtr, u32 DeviceId);
@@ -141,6 +107,8 @@ float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect);
 // Functions PWM
 void setBuzzerPWM(float xadcVoltage);
 void setServoPWM(float xadcVoltage);
+void resetPWMs();
+void setPWMs(float voltage);
 
 // Functions GPIO Interrupt
 void GpioHandler(void *CallBackRef);
@@ -173,14 +141,17 @@ XGpio Gpio; /* The Instance of the GPIO Driver */
 INTC Intc; /* The Instance of the Interrupt Controller Driver */
 static u16 GlobalIntrMask; /* GPIO channel mask that is needed by the Interrupt Handler */
 
+// Variables General
+enum modes {Reset, DisabledPot, DisabledLDR, EnabledPot, EnabledLDR} currentMode;
+
 int main()
 {
     init_platform();
 
     //Vars
     XSysMon Xadc;
-	u8 ChannelIndex = 2;
 	float xadc_voltageData;
+	currentMode = Reset;
 
 	/* ****** Initialize things ******* */
 	//XADC
@@ -195,7 +166,6 @@ int main()
 	PWM_Enable(SERVO_BASE_ADDR);
 
 	//Button interrupts
-	//GpioIntrExample(&Intc, &Gpio, GPIO_DEVICE_ID, INTC_GPIO_INTERRUPT_ID, GPIO_CHANNEL1, &DataRead);
 	GpioInterruptEnable(&Intc, &Gpio, GPIO_DEVICE_ID, INTC_GPIO_INTERRUPT_ID, GPIO_CHANNEL1);
 
 	printf("About to begin wondrous things\r\n");
@@ -203,6 +173,41 @@ int main()
 	//StartPWM();
 
 	while(1) {
+		switch(currentMode) {
+			case Reset:
+				//Display Reset on the LCD
+				//Set all PWMs to 0 duty cycle
+				resetPWMs();
+				break;
+			case EnabledPot:
+				//Display Enabled\nPotentiometer on the LCD
+				//Read xadc from Pot
+				//Run all pwms
+				xadc_voltageData = xadc_readFull(&Xadc, Channel_List[READ_POT]);
+				setPWMs(xadc_voltageData);
+				break;
+			case EnabledLDR:
+				//Display Enabled\nLDR on the LCD
+				//Read xadc from LDR
+				//Run all pwms
+				xadc_voltageData = xadc_readFull(&Xadc, Channel_List[READ_LDR]);
+				setPWMs(xadc_voltageData);
+				break;
+			case DisabledPot:
+				//Display Disabled\nPotentiometer on the LCD
+				//Set all PWMs to 0 duty cycle
+				resetPWMs();
+				break;
+			case DisabledLDR:
+				//Display Disabled\nLDR on the LCD
+				//Set all PWMs to 0 duty cycle
+				resetPWMs();
+				break;
+			default: 
+				break;
+		}
+
+		/*
 		//vars setup
 		u32 channelSelect = Channel_List[ChannelIndex];
 
@@ -213,14 +218,29 @@ int main()
 		setBuzzerPWM(xadc_voltageData);
 		setServoPWM(xadc_voltageData);
 		StartPWM(xadc_voltageData);
+		*/
 
-		//sleep for 500 ms
-		usleep(150 * 1000);
-		//sleep(1);
+		//sleep for 150 ms
+		//usleep(150 * 1000);
+
+		//sleep for 50 ms
+		usleep(50 * 1000);
 	}
 
     cleanup_platform();
     return 0;
+}
+
+void resetPWMs() {
+	XTmrCtr_PwmDisable(&TimerCounterInst);
+	PWM_Set_Duty(SERVO_BASE_ADDR, 0, 0);
+	PWM_Set_Duty(BUZZER_BASE_ADDR, 0, 0);
+}
+
+void setPWMs(float voltage) {
+	setBuzzerPWM(voltage);
+	setServoPWM(voltage);
+	StartPWM(voltage);
 }
 
 void GpioInterruptEnable(INTC *IntcInstancePtr, XGpio* InstancePtr, u16 DeviceId, u16 IntrId, u16 IntrMask)
@@ -230,9 +250,7 @@ void GpioInterruptEnable(INTC *IntcInstancePtr, XGpio* InstancePtr, u16 DeviceId
 	GpioSetupIntrSystem(IntcInstancePtr, InstancePtr, DeviceId, IntrId, IntrMask);
 }
 
-
-int GpioSetupIntrSystem(INTC *IntcInstancePtr, XGpio *InstancePtr,
-			u16 DeviceId, u16 IntrId, u16 IntrMask)
+int GpioSetupIntrSystem(INTC *IntcInstancePtr, XGpio *InstancePtr, u16 DeviceId, u16 IntrId, u16 IntrMask)
 {
 	int Result;
 
@@ -338,16 +356,36 @@ void GpioHandler(void *CallbackRef)
 
 	switch(dataRead) {
 	case BTN_0:
-		printf("BTN0\r\n");
+		//printf("BTN0\r\n");
+		currentMode = Reset;
 		break;
 	case BTN_1:
-		printf("BTN1\r\n");
+		//printf("BTN1\r\n");
+		if     (currentMode == EnabledLDR)
+			currentMode = EnabledPot;
+		else if(currentMode == EnabledPot)
+			currentMode = EnabledLDR;
+		else if(currentMode == DisabledPot)
+			currentMode = DisabledLDR;
+		else if(currentMode == DisabledLDR) 
+			currentMode = DisabledPot;
 		break;
 	case BTN_2:
-		printf("BTN2\r\n");
+		//printf("BTN2\r\n");
+		if(currentMode == EnabledLDR)
+			currentMode = DisabledLDR;
+		else if(currentMode == EnabledPot)
+			currentMode = DisabledPot;
+		else if(currentMode == DisabledLDR)
+			currentMode = EnabledLDR;
+		else if(currentMode == DisabledPot)
+			currentMode = EnabledPot;
 		break;
 	case NO_BUTTONS:
-		printf("Button Released\r\n");
+		//printf("Button Released\r\n");
+		if(currentMode == Reset) {
+			currentMode = EnabledPot;
+		}
 		break;
 	default:
 		printf("Unknown Button\r\n");
@@ -359,8 +397,7 @@ void GpioHandler(void *CallbackRef)
 
 }
 
-void GpioDisableIntr(INTC *IntcInstancePtr, XGpio *InstancePtr,
-			u16 IntrId, u16 IntrMask)
+void GpioDisableIntr(INTC *IntcInstancePtr, XGpio *InstancePtr, u16 IntrId, u16 IntrMask)
 {
 	XGpio_InterruptDisable(InstancePtr, IntrMask);
 #ifdef XPAR_INTC_0_DEVICE_ID
@@ -372,7 +409,6 @@ void GpioDisableIntr(INTC *IntcInstancePtr, XGpio *InstancePtr,
 #endif
 	return;
 }
-
 
 int StartPWM(float xadcVoltage){
 	int Status;
@@ -402,8 +438,8 @@ int StartPWM(float xadcVoltage){
 }
 
 void setServoPWM(float xadcVoltage) {
-	int pwmPeriod = (2.5 + ((10/1.650) * xadcVoltage)) * 10000;
-	PWM_Set_Duty(SERVO_BASE_ADDR, pwmPeriod, 0);
+	int pwmHigh = (2.5 + ((10/1.650) * xadcVoltage)) * 10000;
+	PWM_Set_Duty(SERVO_BASE_ADDR, pwmHigh, 0);
 }
 
 void setBuzzerPWM(float xadcVoltage) {
@@ -508,20 +544,6 @@ float Xadc_RawToVoltage(u16 Data, u8 Channel) {
 		FloatData = Scale;
 	FloatData *= (float)Data / (float)0xFFFF;
 	return FloatData;
-}
-
-void Xadc_Demo(XSysMon *InstancePtr, u32 RGBLED_BaseAddr, u32 ChannelSelect) {
-	u16 Xadc_RawData[32];
-	u32 ChannelValidVector;
-	float Xadc_VoltageData;
-	ChannelValidVector = Xadc_ReadData(InstancePtr, Xadc_RawData);
-	if (Test_Bit(ChannelValidVector, ChannelSelect)) {
-		Xadc_VoltageData = Xadc_RawToVoltage(Xadc_RawData[ChannelSelect], ChannelSelect);
-		printf("Analog Input %s: %.3fV\r\n", Channel_Names[ChannelSelect], Xadc_VoltageData);
-		printf("Analog Raw: %u\r\n\r\n",Xadc_RawData[ChannelSelect]);
-	} else {
-		printf("Channel %d (%s) Not Available\r\n", (int)ChannelSelect, Channel_Names[ChannelSelect]);
-	}
 }
 
 float fixNegatives(float orig) {
