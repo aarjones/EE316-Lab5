@@ -1,13 +1,14 @@
-16:30:55 **** Incremental Build of configuration Debug for project xadc_test ****
+18:24:42 **** Auto Build of configuration Debug for project xadc_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../xadc_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:88:8: warning: "/*" within comment [-Wcomment]
- #endif /* XPAR_INTC_0_DEVICE_ID */
-         
+../src/main.c: In function 'StartPWM':
+../src/main.c:432:6: warning: unused variable 'speed' [-Wunused-variable]
+  int speed = XTmrCtr_PwmConfigure(&TimerCounterInst, PWM_PERIOD, duty);
+      ^~~~~
 'Finished building: ../src/main.c'
 ' '
 'Building target: xadc_test.elf'
@@ -18,9 +19,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size xadc_test.elf  |tee "xadc_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  74752	   3552	  23408	 101712	  18d50	xadc_test.elf
+  47660	   3152	  22728	  73540	  11f44	xadc_test.elf
 'Finished building: xadc_test.elf.size'
 ' '
 
-16:30:56 Build Finished (took 882ms)
+18:24:42 Build Finished (took 534ms)
 

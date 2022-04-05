@@ -78,8 +78,6 @@
 
 //AXI PWM
 #define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
-int StartPWM(float xadcVoltage);
-int StartPWM2();
 #define PWM_PERIOD              200000 //consider adding additional 0 to go back to previous
 
 //Digilent PWM
@@ -105,15 +103,16 @@ float fixNegatives(float orig);
 float xadc_readFull(XSysMon *InstancePtr, u32 channelSelect);
 
 // Functions PWM
+int StartPWM(float xadcVoltage);
 void setBuzzerPWM(float xadcVoltage);
 void setServoPWM(float xadcVoltage);
 void resetPWMs();
 void setPWMs(float voltage);
 
 // Functions GPIO Interrupt
-void GpioHandler(void *CallBackRef);
 int GpioIntrExample(INTC *IntcInstancePtr, XGpio *InstancePtr, u16 DeviceId, u16 IntrId, u16 IntrMask, u32 *DataRead);
 int GpioSetupIntrSystem(INTC *IntcInstancePtr, XGpio *InstancePtr, u16 DeviceId, u16 IntrId, u16 IntrMask);
+void GpioHandler(void *CallBackRef);
 void GpioDisableIntr(INTC *IntcInstancePtr, XGpio *InstancePtr, u16 IntrId, u16 IntrMask);
 void GpioInterruptEnable(INTC *IntcInstancePtr, XGpio *InstancePtr, u16 DeviceId, u16 IntrId, u16 IntrMask);
 
@@ -148,7 +147,7 @@ int main()
 {
     init_platform();
 
-    //Vars
+    /* ****** Variable Setup ******* */
     XSysMon Xadc;
 	float xadc_voltageData;
 	currentMode = Reset;
@@ -170,19 +169,19 @@ int main()
 
 	printf("About to begin wondrous things\r\n");
 
-	//StartPWM();
-
 	while(1) {
 		switch(currentMode) {
 			case Reset:
 				//Display Reset on the LCD
 				//Set all PWMs to 0 duty cycle
+				printf("Reset Mode\r\n");
 				resetPWMs();
 				break;
 			case EnabledPot:
 				//Display Enabled\nPotentiometer on the LCD
 				//Read xadc from Pot
 				//Run all pwms
+				printf("Enabled, Potentiometer\r\n");
 				xadc_voltageData = xadc_readFull(&Xadc, Channel_List[READ_POT]);
 				setPWMs(xadc_voltageData);
 				break;
@@ -190,17 +189,20 @@ int main()
 				//Display Enabled\nLDR on the LCD
 				//Read xadc from LDR
 				//Run all pwms
+				printf("Enabled, LDR\r\n");
 				xadc_voltageData = xadc_readFull(&Xadc, Channel_List[READ_LDR]);
 				setPWMs(xadc_voltageData);
 				break;
 			case DisabledPot:
 				//Display Disabled\nPotentiometer on the LCD
 				//Set all PWMs to 0 duty cycle
+				printf("Disabled, Potentiometer\r\n");
 				resetPWMs();
 				break;
 			case DisabledLDR:
 				//Display Disabled\nLDR on the LCD
 				//Set all PWMs to 0 duty cycle
+				printf("Disabled, LDR\r\n");
 				resetPWMs();
 				break;
 			default: 
@@ -431,7 +433,7 @@ int StartPWM(float xadcVoltage){
 
 	/* Enable PWM */
     XTmrCtr_PwmEnable(&TimerCounterInst);
-    printf("enabled: %u\r\n", speed);
+    //printf("enabled: %u\r\n", speed);
 
 
     return 0;
