@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Mon Apr  4 15:18:14 2022
+--Date        : Tue Apr  5 15:11:52 2022
 --Host        : AaronThinkPad running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2063,6 +2063,8 @@ entity design_1 is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    Vp_Vn_0_v_n : in STD_LOGIC;
+    Vp_Vn_0_v_p : in STD_LOGIC;
     btns_3bits_tri_i : in STD_LOGIC_VECTOR ( 2 downto 0 );
     buzzer_pwm : out STD_LOGIC_VECTOR ( 0 to 0 );
     full_pwm : out STD_LOGIC;
@@ -2343,6 +2345,8 @@ architecture STRUCTURE of design_1 is
   signal Vaux0_0_1_V_P : STD_LOGIC;
   signal Vaux1_0_1_V_N : STD_LOGIC;
   signal Vaux1_0_1_V_P : STD_LOGIC;
+  signal Vp_Vn_0_1_V_N : STD_LOGIC;
+  signal Vp_Vn_0_1_V_P : STD_LOGIC;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal axi_gpio_0_ip2intc_irpt : STD_LOGIC;
   signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -2548,6 +2552,8 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
+  attribute X_INTERFACE_INFO of Vp_Vn_0_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 Vp_Vn_0 V_N";
+  attribute X_INTERFACE_INFO of Vp_Vn_0_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 Vp_Vn_0 V_P";
   attribute X_INTERFACE_INFO of ldr_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 ldr V_N";
   attribute X_INTERFACE_INFO of ldr_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 ldr V_P";
   attribute X_INTERFACE_INFO of pot_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 pot V_N";
@@ -2561,12 +2567,14 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_INFO of btns_3bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 btns_3bits TRI_I";
-  attribute X_INTERFACE_INFO of lcd_6bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 lcd_6bits ";
+  attribute X_INTERFACE_INFO of lcd_6bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 lcd_6bits TRI_O";
 begin
   Vaux0_0_1_V_N <= pot_v_n;
   Vaux0_0_1_V_P <= pot_v_p;
   Vaux1_0_1_V_N <= ldr_v_n;
   Vaux1_0_1_V_P <= ldr_v_p;
+  Vp_Vn_0_1_V_N <= Vp_Vn_0_v_n;
+  Vp_Vn_0_1_V_P <= Vp_Vn_0_v_p;
   axi_gpio_0_GPIO_TRI_I(2 downto 0) <= btns_3bits_tri_i(2 downto 0);
   buzzer_pwm(0) <= PWM_1_pwm(0);
   full_pwm <= axi_timer_0_pwm0;
@@ -2974,8 +2982,8 @@ xadc_wiz_0: component design_1_xadc_wiz_0_0
       vauxn1 => Vaux1_0_1_V_N,
       vauxp0 => Vaux0_0_1_V_P,
       vauxp1 => Vaux1_0_1_V_P,
-      vn_in => '0',
-      vp_in => '0'
+      vn_in => Vp_Vn_0_1_V_N,
+      vp_in => Vp_Vn_0_1_V_P
     );
 xlconcat_0: component design_1_xlconcat_0_0
      port map (

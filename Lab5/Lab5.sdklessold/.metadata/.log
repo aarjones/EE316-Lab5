@@ -1,0 +1,96 @@
+!SESSION 2022-04-05 15:20:36.316 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk
+
+This is a continuation of log file C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.metadata\.bak_0.log
+Created Time: 2022-04-05 15:28:37.046
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:37.046
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.691
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_2]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.691
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.692
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.692
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.712
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.713
+!MESSAGE XSCT Command: [stop], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.733
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:38.733
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.029
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.030
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.036
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.036
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.058
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.059
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.090
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.090
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.112
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.113
+!MESSAGE XSCT Command: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/xadc_demo/Debug/xadc_demo.elf], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.310
+!MESSAGE XSCT command with result: [dow C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/xadc_demo/Debug/xadc_demo.elf], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.310
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.311
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.376
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.480
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370AFD299A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.481
+!MESSAGE XSCT Command: [con], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:28:39.486
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-04-05 15:29:42.070
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:29:42.092
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-419
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-05 15:29:42.094
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-419

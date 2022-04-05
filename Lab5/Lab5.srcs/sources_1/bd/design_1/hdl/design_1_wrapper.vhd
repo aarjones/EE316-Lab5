@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Mon Apr  4 15:18:14 2022
+--Date        : Tue Apr  5 15:11:53 2022
 --Host        : AaronThinkPad running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -34,6 +34,8 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    Vp_Vn_0_v_n : in STD_LOGIC;
+    Vp_Vn_0_v_p : in STD_LOGIC;
     btns_3bits_tri_i : in STD_LOGIC_VECTOR ( 2 downto 0 );
     buzzer_pwm : out STD_LOGIC_VECTOR ( 0 to 0 );
     full_pwm : out STD_LOGIC;
@@ -52,12 +54,6 @@ architecture STRUCTURE of design_1_wrapper is
     full_pwm : out STD_LOGIC;
     servo_pwm : out STD_LOGIC_VECTOR ( 0 to 0 );
     buzzer_pwm : out STD_LOGIC_VECTOR ( 0 to 0 );
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -77,8 +73,16 @@ architecture STRUCTURE of design_1_wrapper is
     pot_v_n : in STD_LOGIC;
     pot_v_p : in STD_LOGIC;
     lcd_6bits_tri_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
     ldr_v_n : in STD_LOGIC;
-    ldr_v_p : in STD_LOGIC
+    ldr_v_p : in STD_LOGIC;
+    Vp_Vn_0_v_n : in STD_LOGIC;
+    Vp_Vn_0_v_p : in STD_LOGIC
   );
   end component design_1;
 begin
@@ -105,6 +109,8 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      Vp_Vn_0_v_n => Vp_Vn_0_v_n,
+      Vp_Vn_0_v_p => Vp_Vn_0_v_p,
       btns_3bits_tri_i(2 downto 0) => btns_3bits_tri_i(2 downto 0),
       buzzer_pwm(0) => buzzer_pwm(0),
       full_pwm => full_pwm,

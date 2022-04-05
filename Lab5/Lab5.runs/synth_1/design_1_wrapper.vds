@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Apr  4 15:19:19 2022
-# Process ID: 10172
+# Start of session at: Tue Apr  5 15:13:16 2022
+# Process ID: 18752
 # Current directory: C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/synth_1/design_1_wrapper.vds
@@ -19,14 +19,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21924 
+INFO: Helper process launched with PID 21892 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 843.000 ; gain = 177.301
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 845.594 ; gain = 177.125
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2043' bound to instance 'design_1_i' of component 'design_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2082]
-INFO: [Synth 8-3491] module 'design_1_PWM_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/synth/design_1_PWM_0_0.sv:56' bound to instance 'PWM_0' of component 'design_1_PWM_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2575]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:51]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2043' bound to instance 'design_1_i' of component 'design_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2084]
+INFO: [Synth 8-3491] module 'design_1_PWM_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/synth/design_1_PWM_0_0.sv:56' bound to instance 'PWM_0' of component 'design_1_PWM_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2583]
 INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_0_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/synth/design_1_PWM_0_0.sv:56]
 INFO: [Synth 8-6157] synthesizing module 'PWM_v2_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/43fd/hdl/PWM_v2_0.sv:4]
 	Parameter NUM_PWM bound to: 1 - type: integer 
@@ -42,10 +42,10 @@ INFO: [Synth 8-6157] synthesizing module 'PWM_AXI' [c:/Users/jones/Desktop/EE316
 INFO: [Synth 8-6155] done synthesizing module 'PWM_AXI' (1#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/43fd/hdl/PWM_AXI.sv:4]
 INFO: [Synth 8-6155] done synthesizing module 'PWM_v2_0' (2#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/43fd/hdl/PWM_v2_0.sv:4]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_0_0' (3#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/synth/design_1_PWM_0_0.sv:56]
-INFO: [Synth 8-3491] module 'design_1_PWM_1_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_1_0/synth/design_1_PWM_1_0.sv:56' bound to instance 'PWM_1' of component 'design_1_PWM_1_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2600]
+INFO: [Synth 8-3491] module 'design_1_PWM_1_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_1_0/synth/design_1_PWM_1_0.sv:56' bound to instance 'PWM_1' of component 'design_1_PWM_1_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2608]
 INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_1_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_1_0/synth/design_1_PWM_1_0.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_1_0' (4#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_PWM_1_0/synth/design_1_PWM_1_0.sv:56]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_1' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd:59' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2625]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_1' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd:59' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2633]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd:85]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -315,7 +315,7 @@ WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GE
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (11#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (12#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (13#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd:85]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_1' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/synth/design_1_axi_gpio_1_1.vhd:59' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2649]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_1' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/synth/design_1_axi_gpio_1_1.vhd:59' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_1' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2657]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_1' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/synth/design_1_axi_gpio_1_1.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -485,7 +485,7 @@ WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was 
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (13#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (13#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_1_1' (14#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/synth/design_1_axi_gpio_1_1.vhd:84]
-INFO: [Synth 8-3491] module 'design_1_axi_timer_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:59' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2672]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:59' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2680]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:90]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
@@ -1027,7 +1027,7 @@ INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized1' 
 INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized1' (20#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 INFO: [Synth 8-256] done synthesizing module 'axi_timer' (21#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd:2139]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_timer_0_0' (22#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:90]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2701]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2709]
 INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -2123,7 +2123,7 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sas
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (60#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (61#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (62#1) [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:1121]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:59' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2933]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:59' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2941]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -2196,7 +2196,7 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (65#1) [c:/Users/jones/De
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (66#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (67#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (68#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
-INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd:55' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2946]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd:55' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2954]
 INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd:100]
 	Parameter C_INSTANCE bound to: design_1_xadc_wiz_0_0_axi_xadc - type: string 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
@@ -2572,7 +2572,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0_interrupt_control
 INFO: [Synth 8-256] done synthesizing module 'design_1_xadc_wiz_0_0_interrupt_control' (75#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_interrupt_control.vhd:240]
 INFO: [Synth 8-256] done synthesizing module 'design_1_xadc_wiz_0_0_axi_xadc' (76#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_axi_xadc.vhd:238]
 INFO: [Synth 8-256] done synthesizing module 'design_1_xadc_wiz_0_0' (77#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd:100]
-INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2980]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2988]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -2611,8 +2611,8 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/jo
 	Parameter NUM_PORTS bound to: 2 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (78#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (79#1) [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (80#1) [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2082]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (81#1) [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (80#1) [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/synth/design_1.vhd:2084]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (81#1) [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:51]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
@@ -2715,7 +2715,7 @@ WARNING: [Synth 8-3331] design design_1_xadc_wiz_0_0_soft_reset has unconnected 
 WARNING: [Synth 8-3331] design design_1_xadc_wiz_0_0_soft_reset has unconnected port Bus2IP_Data[23]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1099.422 ; gain = 433.723
+Finished RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1100.828 ; gain = 432.359
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2728,10 +2728,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1099.422 ; gain = 433.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1100.828 ; gain = 432.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1099.422 ; gain = 433.723
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1100.828 ; gain = 432.359
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 193 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2760,6 +2760,12 @@ Finished Parsing XDC File [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sour
 Parsing XDC File [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_0/U0'
 Finished Parsing XDC File [c:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_0/U0'
 Parsing XDC File [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'v_p'. [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'v_n'. [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.srcs/constrs_1/imports/digilent-xdc-master/Cora-Z7-07S-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -2769,7 +2775,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1134.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1135.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 128 instances were transformed.
   FDR => FDRE: 84 instances
@@ -2777,16 +2783,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDRSE => FDRSE (FDRE, LUT4, VCC): 42 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1134.875 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1135.945 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1134.875 ; gain = 469.176
+Finished Constraint Validation : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1135.945 ; gain = 467.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1134.875 ; gain = 469.176
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1135.945 ; gain = 467.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2811,7 +2817,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint fi
 Applied set_property DONT_TOUCH = true for design_1_i/PWM_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 1134.875 ; gain = 469.176
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1135.945 ; gain = 467.477
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
@@ -2870,7 +2876,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_1_xadc_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1134.875 ; gain = 469.176
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 1135.945 ; gain = 467.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3829,7 +3835,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/xadc_wiz_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/xadc_wiz_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1134.875 ; gain = 469.176
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1135.945 ; gain = 467.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3841,13 +3847,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1196.461 ; gain = 530.762
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1197.395 ; gain = 528.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1253.270 ; gain = 587.570
+Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1253.070 ; gain = 584.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3859,7 +3865,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 1258.371 ; gain = 592.672
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1258.270 ; gain = 589.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3884,7 +3890,7 @@ INFO: [Synth 8-5365] Flop inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3897,7 +3903,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3909,25 +3915,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -4086,17 +4092,18 @@ Report Instance Areas:
 |98    |    xlconcat_0                                                                |design_1_xlconcat_0_0                                          |     0|
 +------+------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.051 ; gain = 593.582
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 235 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:37 . Memory (MB): peak = 1262.133 ; gain = 560.980
-Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.133 ; gain = 596.434
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1262.051 ; gain = 558.465
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1262.051 ; gain = 593.582
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 164 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1274.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1274.160 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 65 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 32 instances
@@ -4104,12 +4111,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-801 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+802 Infos, 123 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:02:02 . Memory (MB): peak = 1274.242 ; gain = 861.926
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1274.242 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:02:02 . Memory (MB): peak = 1274.160 ; gain = 859.512
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1274.160 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  4 15:21:31 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  5 15:15:27 2022...
