@@ -52,3 +52,10 @@ con
 
 15:31:42 INFO  : Launch script is exported to file 'C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_xadc_test.elf_on_local.tcl'
 15:32:48 INFO  : Disconnected from the channel tcfchan#1.
+16:13:31 INFO  : Registering command handlers for SDK TCF services
+16:13:31 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\jones\Desktop\EE316-Lab5\Lab5\Lab5.sdk\temp_xsdb_launch_script.tcl
+16:13:33 INFO  : XSCT server has started successfully.
+16:13:33 INFO  : Successfully done setting XSCT server connection channel  
+16:13:33 INFO  : Successfully done setting SDK workspace  
+16:13:33 INFO  : Processing command line option -hwspec C:/Users/jones/Desktop/EE316-Lab5/Lab5/Lab5.sdk/design_1_wrapper.hdf.
+16:13:34 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Tue Apr  5 18:16:43 2022
+# Process ID: 16748
+# Current directory: C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6956 C:\Users\jones\Desktop\EE316-Lab5\MoreTesting\myproj\project_1.xpr
+# Log file: C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/vivado.log
+# Journal file: C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jones/Desktop/MoreTesting/myproj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/jones/Desktop/EE316-Lab5/EE316-Lab5/ip'; using path 'C:/Users/jones/Desktop/EE316-Lab5/ip' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jones/Desktop/EE316-Lab5/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 898.109 ; gain = 232.469
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk -hwspec C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk -hwspec C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk -hwspec C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk -hwspec C:/Users/jones/Desktop/EE316-Lab5/MoreTesting/myproj/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  5 18:24:54 2022...
